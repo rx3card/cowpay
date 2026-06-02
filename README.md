@@ -9,7 +9,7 @@ cowpay/ (Raíz del repositorio Git)
 │   ├── prototipado/           ← Designs
 │   ├── Historias de campo.docx
 │   └── CowPay.pdf
-├── src/                       ← Código fuente de la app real
+├── src/                       ← Código principal
 │   ├── index.html
 │   ├── css/
 │   └── img/
