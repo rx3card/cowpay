@@ -27,4 +27,6 @@ npx serve -p 3000 src
 Para iniciar un servidor público-temporal:
 ```bash
 ssh -R 80:localhost:3000 nokey@localhost.run
+ó
+npx serve -l tcp://0.0.0.0:3000 src
 ```

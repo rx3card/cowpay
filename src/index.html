@@ -305,7 +305,7 @@
       }
 
       .main {
-        padding: 18px 16px 100px
+        padding: 18px 16px 140px
       }
     }
 
@@ -3222,14 +3222,7 @@
       { id: 17, name: "Brownie con helado", desc: "Chocolate caliente · helado de vainilla", price: 13000, cat: "postres", st: "disp", img: "https://images.unsplash.com/photo-1564355808539-22fda35bed7e?w=600&h=400&fit=crop&q=85" },
     ];
     const PEOPLE = [
-      { name: "Tú", init: "TÚ", color: "#607D8B", paid: false },
-      { name: "Andrés", init: "AN", color: "#FF7043", paid: false },
-      { name: "Camila", init: "CA", color: "#7986CB", paid: false },
-      { name: "Sebastián", init: "SE", color: "#FFB74D", paid: false },
-      { name: "Valeria", init: "VA", color: "#4DB6AC", paid: false },
-      { name: "Daniel", init: "DA", color: "#F06292", paid: false },
-      { name: "Sara", init: "SA", color: "#A1887F", paid: false },
-      { name: "Felipe", init: "FE", color: "#78909C", paid: false },
+      { name: "Tú", init: "TÚ", color: "#607D8B", paid: false }
     ];
     const REST_REVIEWS = [
       { init: "M", color: "#4CAF50", name: "María García", date: "Feb 2026", stars: 5, txt: "Excelente atención y comida deliciosa. La limonada de coco es increíble. 100% recomendado para toda la familia." },
@@ -3239,7 +3232,7 @@
 
     /* --- ESTADO --- */
     let cart = {}, activeTab = 'menu', activeCat = 'todos', dishIdx = 0;
-    let numPeople = 4, payMethod = 'qr', payMode = 'full', splitOption = 'equal', splitPeopleCount = 4, splitPersons = [], orderPlaced = false;
+    let numPeople = 1, payMethod = 'qr', payMode = 'full', splitOption = 'equal', splitPeopleCount = 1, splitPersons = [], orderPlaced = false;
     let currentUser = { name: 'Invitado', type: 'temp' };
     let timerVal = 20, timerTick = null, orderStep = 0, currentRating = 0;
     // Propina/mesero
@@ -3389,8 +3382,12 @@
       if (activeTab === 'pagar') renderPagar();
     }
 
-    function changeSplitPeople(d) {
-      splitPeopleCount = Math.max(2, Math.min(8, splitPeopleCount + d));
+    function addCompanion() {
+      const name = prompt("Nombre del acompañante:");
+      if (!name) return;
+      PEOPLE.push({ name: name, init: name.substring(0, 2).toUpperCase(), color: '#90A4AE', paid: false });
+      numPeople = PEOPLE.length;
+      splitPeopleCount = PEOPLE.length;
       ensureSplitPersons();
       renderCuenta();
       if (activeTab === 'pagar') renderPagar();
@@ -3428,16 +3425,12 @@
       }).join('');
       return `
   <div class="split-settings">
-    <div class="split-ctrl" style="flex-wrap:wrap;row-gap:12px;">
+    <div class="split-ctrl" style="flex-wrap:wrap;row-gap:12px;align-items:center;justify-content:space-between">
       <div>
         <div style="font-size:15px;font-weight:700;color:var(--txt)">Pagar por porcentaje</div>
-        <div style="font-size:12px;color:var(--muted);margin-top:2px">Agrega cuántas personas participan y su porcentaje.</div>
+        <div style="font-size:12px;color:var(--muted);margin-top:2px">Agrega a tus acompañantes y su porcentaje.</div>
       </div>
-      <div class="ctrs">
-        <button class="cbtn" onclick="changeSplitPeople(-1)">−</button>
-        <span class="cnum" id="split-count">${splitPeopleCount}</span>
-        <button class="cbtn" onclick="changeSplitPeople(1)">+</button>
-      </div>
+      <button class="modal-btn-sec" style="padding:8px 12px;margin:0;width:auto" onclick="addCompanion()">+ Agregar persona</button>
     </div>
     <div class="split-choice">
       <button class="split-opt ${splitOption === 'equal' ? 'on' : ''}" onclick="setSplitOption('equal')">Porcentajes iguales</button>
@@ -3916,14 +3909,13 @@
         dav: 'Abre DaviPlata, toca "Pagar con QR" y escanea el código que te muestra el mesero.',
         pla: 'Abre Plata, selecciona "Pagar" y escanea el código QR del mesero.',
         dat: 'El mesero pasa en un momento con el datáfono. Quédate en la mesa.',
-        efe: 'Paga en efectivo directo al mesero. Si tienes el monto exacto, mejor.',
+        efe: 'Paga en efectivo directo al mesero. Si tienes el dinero exacto, mejor.',
       };
       if (m === 'qr') { qrWrap.style.display = 'flex'; msgEl.style.display = 'none'; }
       else { qrWrap.style.display = 'none'; msgEl.style.display = 'block'; msgEl.textContent = msgs[m] || ''; }
     }
 
     function confirmPay() {
-      if (cartCount() === 0 && cartTotal() === 0) { toast('No tienes nada que pagar'); return; }
       if (payMode === 'split' && splitOption === 'custom') {
         const totalPct = splitPersons.reduce((sum, p) => sum + (p.percent || 0), 0);
         if (totalPct !== 100) { toast('Los porcentajes deben sumar 100%.'); return; }
@@ -3987,11 +3979,6 @@
         <div class="dish-reviews">
           <div class="dish-review-header">
             <div class="sec-title">Reseñas del plato</div>
-            <button onclick="nextDish()"
-              style="display:flex;align-items:center;gap:8px;padding:10px 18px;background:var(--bg);border:1.5px solid var(--border);border-radius:20px;font-size:13px;font-weight:700;cursor:pointer;color:var(--txt)">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>
-              Cambiar plato
-            </button>
           </div>
           ${revs.map(r => `<div class="rcard">
             <div class="rhead">
