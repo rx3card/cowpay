@@ -1,19 +1,21 @@
-Proyecto productivo  *(Cowpay).*
+Proyecto productivo *(Cowpay)*
 
+```
 cowpay/ (Raíz del repositorio Git)
 ├── .git/
-├── docs/                      <-- Toda la documentación y diseño
+├── docs/                      ← Documentación y diseño
 │   ├── UML/
 │   ├── Scrum/
-│   ├── prototipado/           <-- Desings
+│   ├── prototipado/           ← Designs
 │   ├── Historias de campo.docx
 │   └── CowPay.pdf
-├── src/                       <-- Código fuente de la app real
+├── src/                       ← Código fuente de la app real
 │   ├── index.html
 │   ├── css/
 │   └── img/
 ├── README.md
 └── .gitignore
+```
 
 ## Servidor
 
