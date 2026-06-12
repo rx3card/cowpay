@@ -7,6 +7,14 @@
 </div>
 
 
+<div align="center">
+<img src="./src/img/595shots_so.png" alt="Desing Responsive">
+
+_Responsi movile_
+
+</div>
+
+
 ```
 cowpay/ (Raíz del repositorio Git)
 ├── .git/
@@ -23,14 +31,6 @@ cowpay/ (Raíz del repositorio Git)
 ├── README.md
 └── .gitignore
 ```
-
-<div align="center">
-<img src="./src/img/595shots_so.png" alt="Desing Responsive">
-
-_Responsi movile_
-
-</div>
-
 
 ## Servidor
 
