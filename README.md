@@ -14,6 +14,7 @@ _Responsi movile_
 
 </div>
 
+### Estructura del proyecto
 
 ```
 cowpay/ (Raíz del repositorio Git)
