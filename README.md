@@ -1,4 +1,11 @@
-Proyecto productivo *(Cowpay)*
+
+<div align="center">
+<img src="./src/img/LOGO.png" alt="Logo Cowpay" width="300px">
+
+### Proyecto productivo del SENA
+
+</div>
+
 
 ```
 cowpay/ (Raíz del repositorio Git)
@@ -16,6 +23,14 @@ cowpay/ (Raíz del repositorio Git)
 ├── README.md
 └── .gitignore
 ```
+
+<div align="center">
+<img src="./src/img/595shots_so.png" alt="Desing Responsive">
+
+_Responsi movile_
+
+</div>
+
 
 ## Servidor
 
