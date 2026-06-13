@@ -1,9 +1,9 @@
 
 <div align="center">
-<img src="./src/img/LOGO.png" alt="Logo Cowpay" width="300px">
 
 ### Proyecto productivo del SENA
 
+<img src="./src/img/LOGO.png" alt="Logo Cowpay" width="300px">
 </div>
 
 
