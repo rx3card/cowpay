@@ -1,18 +1,4 @@
-
-<div align="center">
-
-### Proyecto productivo del SENA
-
-<img src="./src/img/LOGO.png" alt="Logo Cowpay" width="300px">
-</div>
-
-
-<div align="center">
-<img src="./src/img/595shots_so.png" alt="Desing Responsive">
-
-_Responsi movile_
-
-</div>
+## Cowpay
 
 ### Estructura del proyecto
 
