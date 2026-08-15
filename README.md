@@ -11,16 +11,7 @@ pnpm create next-app@latest web
 ```
 cowpay/ (Raíz del repositorio Git)
 ├── .git/
-├── docs/                      ← Documentación y diseño
-│   ├── UML/
-│   ├── Scrum/
-│   ├── prototipado/           ← Designs
-│   ├── Historias de campo.docx
-│   └── CowPay.pdf
-├── src/                       ← Código principal
-│   ├── index.html
-│   ├── css/
-│   └── img/
+├── docs/                      ← Documentación
 ├── README.md
 └── .gitignore
 ```
