@@ -52,3 +52,27 @@ pnpm dev
 #para compilar el proyecto
 pnpm build
 ```
+
+#### Cómo trabajar con gi & github
+
+```
+# 1. Debe de estar en main y tener actualizo el repositorio
+git checkout main
+git pull
+
+# 2. Crea tu propia rama
+git checkout -b nombre-de-tu-rama
+
+# 3. Trabaja en ella... (creas archivos, editas, lo que sea)
+
+# 4. Guarda los cambios
+git add .
+git commit -m "Descripción de tus cambios"
+
+# 5. Sube TU RAMA (no main)
+git push -u origin nombre-de-tu-rama
+
+# 6. En GitHub: Compare & pull request → Create pull request
+# 7. Yo lo reviso y apruebo
+# 8. Botón Merge pull request
+```
