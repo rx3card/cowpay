@@ -1,5 +1,11 @@
 ## Cowpay
 
+### Cambios
+Se creo `/apps` en la que se encuentra /web.
+```
+pnpm create next-app@latest web
+```
+
 ### Estructura del proyecto
 
 ```

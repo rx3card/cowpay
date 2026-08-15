@@ -1,2 +1,23 @@
-.node_modules
+#Dependencias
+node_modules/
+
+#Compilados de NextJS
+.next/
+out/
+dist/
+build/
+
+#Variables de entorno
 .env
+.env.local
+.env*.local
+
+#Sistema operativo
+.DB_store
+Thumbs.db 
+
+#Editor
+.vscode/*
+
+#Logs
+*.log
