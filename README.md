@@ -38,3 +38,17 @@ ssh -R 80:localhost:3000 nokey@localhost.run
 ó
 npx serve -l tcp://0.0.0.0:3000 src
 ```
+
+### Instalación
+
+```
+git clone <URL>
+cd cowpay/
+pnpm install
+
+#para iniciar el servidor en modo desarrollo
+pnpm dev
+
+#para compilar el proyecto
+pnpm build
+```
