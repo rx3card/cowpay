@@ -3,7 +3,7 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "CowPay",
-  description: "Pide, divide la cuenta y paga desde tu mesa.",
+  description: "Proyecto de la etapa lectica (SENA)",
 };
 
 export default function RootLayout({

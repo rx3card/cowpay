@@ -44,7 +44,7 @@ pnpm dev
 pnpm build
 ```
 
-#### Cómo trabajar con gi & github
+#### Cómo trabajar con git & github
 
 ```
 # 1. Debe de estar en main y tener actualizo el repositorio
@@ -66,4 +66,10 @@ git push -u origin nombre-de-tu-rama
 # 6. En GitHub: Compare & pull request → Create pull request
 # 7. Yo lo reviso y apruebo
 # 8. Botón Merge pull request
+
+### Antes de empezar siempre se debe hacer lo siguiente para evitar conflictos.
+git checkout main       # voy a la rama oficial
+git pull                # bajo lo nuevo que hicieron los demás
+git checkout su-rama    # vuelvo a lo mío
+git merge main          # meto lo de ellos en lo mío
 ```
