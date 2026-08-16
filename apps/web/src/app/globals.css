@@ -1,5 +1,213 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
+
+/* =========================================================
+    COWPAY — BASE VISUAL
+   ========================================================= */
+
+
+/* =========================================================
+    PALETA — COMENSAL / PÚBLICA
+   ========================================================= */
 
 :root {
-  --background: #ffffff;
+  /* Colores principales */
+  --color-primary: #F97316;
+  --color-primary-hover: #EA580C;
+  --color-primary-active: #C2410C;
+  --color-primary-light: #FFEDD5;
+
+  /* Neutros de Comensal */
+  --color-background: #FFFDF9;
+  --color-surface: #FFFFFF;
+
+  --color-text: #1F2937;
+  --color-text-secondary: #6B7280;
+
+  --color-border: #E5E7EB;
+}
+
+
+/* =========================================================
+    MODOS DE TRABAJO
+    Administrador / Mesero / Cocina
+   ========================================================= */
+
+
+/* ---------------------------------------------------------
+    ADMINISTRADOR
+   --------------------------------------------------------- */
+
+:root {
+  --admin-primary: #7C3AED;
+  --admin-hover: #6D28D9;
+  --admin-active: #5B21B6;
+  --admin-light: #EDE9FE;
+}
+
+
+/* ---------------------------------------------------------
+    MESERO
+   --------------------------------------------------------- */
+
+:root {
+  --mesero-primary: #0F766E;
+  --mesero-hover: #0D9488;
+  --mesero-active: #0D6F63;
+  --mesero-light: #CCFBF1;
+}
+
+
+/* ---------------------------------------------------------
+    COCINA
+   --------------------------------------------------------- */
+
+:root {
+  --cocina-primary: #6B4F3A;
+  --cocina-hover: #543D2D;
+  --cocina-active: #463326;
+  --cocina-light: #E8DED6;
+}
+
+
+/* ---------------------------------------------------------
+    NEUTROS — MODOS DE TRABAJO
+    Compartidos por Administrador, Mesero y Cocina
+   --------------------------------------------------------- */
+
+:root {
+  --work-dark: #1F2937;
+
+  --work-background: #F8FAFC;
+  --work-surface: #FFFFFF;
+
+  --work-text: #111827;
+  --work-text-secondary: #6B7280;
+
+  --work-border: #E2E8F0;
+}
+
+
+/* =========================================================
+    ESTADOS — COMPARTIDOS
+    Comensal + Administrador + Mesero + Cocina
+   ========================================================= */
+
+:root {
+  /* Success */
+  --color-success: #16A34A;
+  --color-success-light: #DCFCE7;
+
+  /* Warning */
+  --color-warning: #F59E0B;
+  --color-warning-light: #FEF3C7;
+
+  /* Error */
+  --color-error: #DC2626;
+  --color-error-light: #FEE2E2;
+
+  /* Info */
+  --color-info: #2563EB;
+  --color-info-light: #DBEAFE;
+}
+
+
+/* =========================================================
+    ESPACIADOS
+   ========================================================= */
+
+:root {
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+}
+
+
+/* =========================================================
+    TIPOGRAFÍA GENERAL
+   ========================================================= */
+
+:root {
+  --font-family: Inter;
+
+  /* Título principal */
+  --font-size-title: 30px;
+  --font-weight-title: 700;
+
+  /* Título de sección */
+  --font-size-section: 24px;
+  --font-weight-section: 600;
+
+  /* Título de tarjeta / nombre de plato */
+  --font-size-card-title: 20px;
+  --font-weight-card-title: 600;
+
+  /* Texto destacado */
+  --font-size-highlight: 18px;
+  --font-weight-highlight: 500;
+
+  /* Texto normal */
+  --font-size-body: 16px;
+  --font-weight-body: 400;
+
+  /* Botones */
+  --font-size-button: 16px;
+  --font-weight-button: 500;
+
+  /* Texto secundario */
+  --font-size-secondary: 14px;
+  --font-weight-secondary: 400;
+
+  /* Etiquetas / información pequeña */
+  --font-size-small: 12px;
+  --font-weight-small: 400;
+}
+
+
+/* =========================================================
+    APLICACIÓN DE TIPOGRAFÍA
+   ========================================================= */
+
+body {
+  font-family: var(--font-family);
+}
+
+
+/* =========================================================
+  TÍTULOS
+   ========================================================= */
+
+h1 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+}
+
+h2,
+h3 {
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-section);
+}
+
+
+/* =========================================================
+  TEXTO
+   ========================================================= */
+
+p {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
+}
+
+
+/* =========================================================
+    BOTONES — TIPOGRAFÍA BASE
+   ========================================================= */
+
+button {
+  font-family: var(--font-family);
+  font-size: var(--font-size-button);
+  font-weight: var(--font-weight-button);
 }
