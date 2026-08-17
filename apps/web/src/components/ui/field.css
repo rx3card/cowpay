@@ -1,0 +1,42 @@
+.field {
+font-family: var(--font-family);
+font-size: var(--font-size-body);
+font-weight: var(--font-weight-body);
+padding: var(--spacing-sm) var(--spacing-md);
+border: 1px solid var(--field-border);
+border-radius: 8px;
+background: var(--field-background);
+color: var(--field-text);
+}
+
+.field:focus {
+outline: none;
+border-color: var(--field-focus);
+}
+
+.field--comensal {
+--field-background: var(--color-surface);
+--field-text: var(--color-text);
+--field-border: var(--color-border);
+--field-focus: var(--color-primary);
+}
+
+.field--admin,
+.field--mesero,
+.field--cocina {
+--field-background: var(--work-surface);
+--field-text: var(--work-text);
+--field-border: var(--work-border);
+}
+
+.field--admin {
+--field-focus: var(--admin-primary);
+}
+
+.field--mesero {
+--field-focus: var(--mesero-primary);
+}
+
+.field--cocina {
+--field-focus: var(--cocina-primary);
+}

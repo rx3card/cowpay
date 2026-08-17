@@ -1,0 +1,22 @@
+.card {
+padding: var(--spacing-lg);
+background: var(--card-background);
+color: var(--card-text);
+border: 1px solid var(--card-border);
+border-radius: 12px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card--comensal {
+--card-background: var(--color-surface);
+--card-text: var(--color-text);
+--card-border: var(--color-border);
+}
+
+.card--admin,
+.card--mesero,
+.card--cocina {
+--card-background: var(--work-surface);
+--card-text: var(--work-text);
+--card-border: var(--work-border);
+}

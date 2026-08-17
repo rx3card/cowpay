@@ -1,0 +1,31 @@
+.notice {
+padding: var(--spacing-md);
+background: var(--notice-background);
+border: 1px solid var(--notice-border);
+border-radius: 8px;
+color: var(--notice-text);
+}
+
+.notice--success {
+--notice-background: var(--color-success-light);
+--notice-border: var(--color-success);
+--notice-text: var(--color-success);
+}
+
+.notice--warning {
+--notice-background: var(--color-warning-light);
+--notice-border: var(--color-warning);
+--notice-text: var(--color-warning);
+}
+
+.notice--error {
+--notice-background: var(--color-error-light);
+--notice-border: var(--color-error);
+--notice-text: var(--color-error);
+}
+
+.notice--info {
+--notice-background: var(--color-info-light);
+--notice-border: var(--color-info);
+--notice-text: var(--color-info);
+}
