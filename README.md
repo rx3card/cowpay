@@ -61,7 +61,7 @@ git add .
 git commit -m "Descripción de tus cambios"
 
 # 5. Sube TU RAMA (no main)
-git push -u origin nombre-de-tu-rama
+git push origin nombre-de-tu-rama
 
 # 6. En GitHub: Compare & pull request → Create pull request
 # 7. Yo lo reviso y apruebo
