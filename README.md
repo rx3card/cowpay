@@ -47,29 +47,5 @@ pnpm build
 #### Cómo trabajar con git & github
 
 ```
-# 1. Debe de estar en main y tener actualizo el repositorio
-git checkout main
-git pull
 
-# 2. Crea tu propia rama
-git checkout -b nombre-de-tu-rama
-
-# 3. Trabaja en ella... (creas archivos, editas, lo que sea)
-
-# 4. Guarda los cambios
-git add .
-git commit -m "Descripción de tus cambios"
-
-# 5. Sube TU RAMA (no main)
-git push origin nombre-de-tu-rama
-
-# 6. En GitHub: Compare & pull request → Create pull request
-# 7. Yo lo reviso y apruebo
-# 8. Botón Merge pull request
-
-### Antes de empezar siempre se debe hacer lo siguiente para evitar conflictos.
-git checkout main       # voy a la rama oficial
-git pull                # bajo lo nuevo que hicieron los demás
-git checkout su-rama    # vuelvo a lo mío
-git merge main          # meto lo de ellos en lo mío
 ```
