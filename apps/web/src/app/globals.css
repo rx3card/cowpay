@@ -1,5 +1,135 @@
-/* @import "tailwindcss"; */
+@import "tailwindcss";
+
+/*PALETA DEL COMENSAL / PÚBLICA*/
 
 :root {
-  --background: #ffffff;
+  /* Colores principales */
+  --color-primary: #f97316;
+  --color-primary-hover: #ea580c;
+  --color-primary-active: #c2410c;
+  --color-primary-light: #ffedd5;
+
+  /* Neutros de Comensal */
+  --color-background: #fffdf9;
+  --color-surface: #ffffff; /* Se usa para resaltar la pantalla blanca del fronted al momento de crear una tarjeta o algo parecido */
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+
+  /*MODOS DE TRABAJO Administrador / Mesero / Cocina*/
+
+  /*ADMINISTRADOR*/
+  --admin-primary: #7c3aed;
+  --admin-hover: #6d28d9;
+  --admin-active: #5b21b6;
+  --admin-light: #ede9fe;
+
+  /*MESERO*/
+  --mesero-primary: #0f766e;
+  --mesero-hover: #0d9488;
+  --mesero-active: #0d6f63;
+  --mesero-light: #ccfbf1;
+
+  /*COCINA*/
+  --cocina-primary: #6b4f3a;
+  --cocina-hover: #543d2d;
+  --cocina-active: #463326;
+  --cocina-light: #e8ded6;
+
+  /*NEUTROS — MODOS DE TRABAJO
+Compartidos por Administrador, Mesero y Cocina*/
+  --work-dark: #1f2937;
+  --work-background: #f8fafc;
+  --work-surface: #ffffff;
+  --work-text: #111827;
+  --work-text-secondary: #6b7280;
+  --work-border: #e2e8f0;
+
+  /*ESTADOS — COMPARTIDOS Comensal + Administrador + Mesero + Cocina*/
+
+  /* Success */
+  --color-success: #16a34a;
+  --color-success-light: #dcfce7;
+
+  /* Warning */
+  --color-warning: #f59e0b;
+  --color-warning-light: #fef3c7;
+
+  /* Error */
+  --color-error: #dc2626;
+  --color-error-light: #fee2e2;
+
+  /* Info */
+  --color-info: #2563eb;
+  --color-info-light: #dbeafe;
+
+  /*ESPACIADOS*/
+  --spacing-xs: 4px;
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-2xl: 40px;
+  --spacing-3xl: 48px;
+
+  /*TIPOGRAFÍA GENERAL*/
+  --font-family: Inter, sans-serif;
+
+  /* Título principal */
+  --font-size-title: 30px;
+  --font-weight-title: 700;
+
+  /* Título de sección */
+  --font-size-section: 24px;
+  --font-weight-section: 600;
+
+  /* Título de tarjeta / nombre de plato */
+  --font-size-card-title: 20px;
+  --font-weight-card-title: 600;
+
+  /* Texto destacado */
+  --font-size-highlight: 18px;
+  --font-weight-highlight: 500;
+
+  /* Texto normal */
+  --font-size-body: 16px;
+  --font-weight-body: 400;
+
+  /* Botones */
+  --font-size-button: 16px;
+  --font-weight-button: 500;
+
+  /* Texto secundario */
+  --font-size-secondary: 14px;
+  --font-weight-secondary: 400;
+
+  /* Etiquetas / información pequeña */
+  --font-size-small: 12px;
+  --font-weight-small: 400;
+}
+
+/*APLICACIÓN DE TIPOGRAFIA*/
+
+body {
+  font-family: var(--font-family);
+}
+
+/*TÍTULOS*/
+
+h1 {
+  font-size: var(--font-size-title);
+  font-weight: var(--font-weight-title);
+}
+
+h2,
+h3 {
+  font-size: var(--font-size-section);
+  font-weight: var(--font-weight-section);
+}
+
+/*TEXTO*/
+
+p {
+  font-size: var(--font-size-body);
+  font-weight: var(--font-weight-body);
 }
