@@ -52,7 +52,7 @@ repositorio del equipo mediante una **Pull Requests**.
 
 ---
 
-###### 1. Configuración inicial (una sola vez)
+##### 1. Configuración inicial (una sola vez)
 
 1. Entra a https://github.com/rx3card/cowpay y presiona **Fork**.
 2. Clona tu fork (cambia `SU_USUARIO`):
