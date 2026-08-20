@@ -45,7 +45,7 @@ pnpm build
 ```
 
 
-#### Cómo trabajar con Git & GitHub
+### Cómo trabajar con Git & GitHub
 
 Cada debe de tener su **fork** (su propia copia) y propone sus cambios al
 repositorio del equipo mediante una **Pull Requests**.
@@ -77,14 +77,14 @@ git remote -v
 
 Debe aparecer `origin` (tu fork) y `upstream` (el del equipo).
 
-**Esto es lo más importante de entender:**
+**Lo más importante de entender:**
 `git pull` solo trae cambios de TU fork, y a tu fork nadie más sube NADA.
 Para traer lo del equipo se usa `upstream`. Sin esto, van a trabajar sobre
-una versión vieja sin darse cuenta.
+una versión antigua sin darse cuenta.
 
 ---
 
-##### 2. TODOS LOS DÍAS, antes de escribir una sola línea
+##### 2. TODOS LOS DÍAS, antes de hacer alguna modificación
 
 ```bash
 git fetch upstream
@@ -92,7 +92,7 @@ git merge upstream/main
 ```
 
 Esto trae lo que el equipo fusionó ayer.
-**Nunca saltarlo.** Es la causa número uno de conflictos.
+**NUNCA SALTARLO.** Es la causa número uno de conflictos.
 
 ---
 
