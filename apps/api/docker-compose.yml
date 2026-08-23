@@ -1,0 +1,16 @@
+services:
+  cowpay-db:
+    image: postgres:17
+    container_name: cowpay-db
+    restart: always
+    environment:
+      POSTGRES_USER: cowpay
+      POSTGRES_PASSWORD: cowpay123
+      POSTGRES_DB: cowpay
+    ports:
+      - "5432:5432"
+    volumes:
+      - cowpay-db-data:/var/lib/postgresql/data
+
+volumes:
+  cowpay-db-data:
