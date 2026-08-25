@@ -18,15 +18,19 @@ model Restaurante {
   slug      String  @unique
   direccion String
   telefono  String
-  horario   String
   fotoUrl   String?
+  latitud   Float
+  longitud  Float
 
   creadoEn      DateTime @default(now())
   actualizadoEn DateTime @updatedAt
 
+  staff     Staff[]
+  reseñas   Reseña[]
   categorias   Categoria[]
   ingredientes Ingrediente[]
   mesas        Mesa[]
+  horarios     HorarioAtencion[]
 }
 
 
@@ -37,8 +41,12 @@ model Categoria {
 
   restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
   restauranteId String
+  deletedAt     DateTime?
 
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
   platos Plato[]
+  @@index([restauranteId])
 }
 
 
@@ -46,15 +54,20 @@ model Plato {
   id          String  @id @default(uuid())
   nombre      String
   descripcion String?
-  precio      Decimal @db.Decimal(10, 2)
-  fotoUrl     String?
+  precio      Int
+  fotos       String[]
   disponible  Boolean @default(true)
 
   categoria   Categoria @relation(fields: [categoriaId], references: [id])
   categoriaId String
+  deletedAt   DateTime?
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
 
   recetaItems  RecetaItem[]
   lineasPedido LineaPedido[]
+  @@index([categoriaId])
 }
 
 
@@ -71,9 +84,11 @@ model Ingrediente {
   restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
   restauranteId String
 
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
   recetaItems RecetaItem[]
+  @@index([restauranteId])
 }
-
 
 
 model RecetaItem {
@@ -86,7 +101,12 @@ model RecetaItem {
   ingrediente   Ingrediente @relation(fields: [ingredienteId], references: [id])
   ingredienteId String
 
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
   @@unique([platoId, ingredienteId])
+  @@index([platoId])
+  @@index([ingredienteId])
 }
 
 
@@ -95,13 +115,17 @@ model Mesa {
   id        String  @id @default(uuid())
   numero    String
   capacidad Int
-  ocupada   Boolean @default(false)
 
   restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
   restauranteId String
+  deletedAt     DateTime?
 
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
   codigoQR CodigoQR?
   sesiones SesionMesa[]
+  @@index([restauranteId])
+  @@unique([restauranteId, numero])
 }
 
 
@@ -112,6 +136,9 @@ model CodigoQR {
 
   mesa   Mesa   @relation(fields: [mesaId], references: [id])
   mesaId String @unique
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
 }
 
 
@@ -123,8 +150,12 @@ model SesionMesa {
   mesa   Mesa   @relation(fields: [mesaId], references: [id])
   mesaId String
 
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
   comensales Comensal[]
   cuentas    Cuenta[]
+  	@@index([mesaId])
 }
 
 
@@ -135,43 +166,219 @@ model Comensal {
 
   sesionMesa   SesionMesa @relation(fields: [sesionMesaId], references: [id])
   sesionMesaId String
+  partesCuenta ParteCuenta[]
+  lineasPedido LineaPedido[]
+  usuario   Usuario? @relation(fields: [usuarioId], references: [id])
+  usuarioId String?
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+  @@index([sesionMesaId])
+  @@index([usuarioId])
 }
 
 
 model Cuenta {
-  id     String  @id @default(uuid())
-  estado String  @default("abierta")
-  total  Decimal @db.Decimal(10, 2) @default(0)
+  id        String       @id @default(uuid())
+  estado    EstadoCuenta @default(ABIERTA)
+  subtotal  Int          @default(0)
+  propina   Int          @default(0)
+  total     Int          @default(0)
+  cerradaEn DateTime?
 
   sesionMesa   SesionMesa @relation(fields: [sesionMesaId], references: [id])
   sesionMesaId String
 
-  pedidos Pedido[]
+  mesero   Staff  @relation(fields: [meseroId], references: [id])
+  meseroId String
+
+  partesCuenta ParteCuenta[]
+  pedidos      Pedido[]
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  @@index([sesionMesaId])
+  @@index([meseroId])
 }
 
 
 model Pedido {
   id       String   @id @default(uuid())
   creadoEn DateTime @default(now())
-  estado   String   @default("pendiente")
+  estado   EstadoPedido @default(RECIBIDO)
+
+  actualizadoEn DateTime @updatedAt
 
   cuenta   Cuenta @relation(fields: [cuentaId], references: [id])
   cuentaId String
 
   lineas LineaPedido[]
+  @@index([cuentaId])
 }
 
 
 model LineaPedido {
-  id             String  @id @default(uuid())
+  id             String @id @default(uuid())
   cantidad       Int
-  precioUnitario Decimal @db.Decimal(10, 2)
+  precioUnitario Int
+  notas          String?
 
   pedido   Pedido @relation(fields: [pedidoId], references: [id])
   pedidoId String
 
   plato   Plato  @relation(fields: [platoId], references: [id])
   platoId String
+
+  comensal   Comensal? @relation(fields: [comensalId], references: [id])
+  comensalId String?
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+  @@index([pedidoId])
+  @@index([platoId])
+  @@index([comensalId])
 }
 
 
+enum RolStaff {
+  ADMINISTRADOR
+  MESERO
+  COCINERO
+  CAJERO
+}
+
+model Usuario {
+  id           String  @id @default(uuid())
+  email        String  @unique
+  passwordHash String
+  nombre       String
+  telefono     String?
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  staff     Staff?
+  comensales Comensal[]
+  reseñas   Reseña[]
+}
+
+model Staff {
+  id     String   @id @default(uuid())
+  rol    RolStaff
+  activo Boolean  @default(true)
+
+  restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
+  restauranteId String
+
+  usuario   Usuario @relation(fields: [usuarioId], references: [id])
+  usuarioId String  @unique
+
+  creadoEn      DateTime @default(now())
+  cuentas Cuenta[]
+  actualizadoEn DateTime @updatedAt
+  @@index([restauranteId])
+}
+
+model Reseña {
+  id          String  @id @default(uuid())
+  calificacion Int
+  comentario  String?
+
+  restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
+  restauranteId String
+
+  usuario   Usuario @relation(fields: [usuarioId], references: [id])
+  usuarioId String
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  @@unique([restauranteId, usuarioId])
+  @@index([restauranteId])
+}
+
+model ParteCuenta {
+  id       String @id @default(uuid())
+  subtotal Int
+  total    Int
+
+  cuenta   Cuenta @relation(fields: [cuentaId], references: [id])
+  cuentaId String
+
+  comensal   Comensal @relation(fields: [comensalId], references: [id])
+  comensalId String
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  pagos Pago[]
+
+  @@unique([cuentaId, comensalId])
+  @@index([cuentaId])
+  @@index([comensalId])
+}
+
+model Pago {
+  id     String @id @default(uuid())
+  monto  Int
+  metodo String
+
+  parteCuenta   ParteCuenta @relation(fields: [parteCuentaId], references: [id])
+  parteCuentaId String
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+
+  transaccion TransaccionPago?
+  @@index([parteCuentaId])
+}
+
+model TransaccionPago {
+  id                 String  @id @default(uuid())
+  proveedor          String
+  referenciaExterna  String  @unique
+  estado             String
+  respuestaCruda     String?
+
+  pago   Pago   @relation(fields: [pagoId], references: [id])
+  pagoId String @unique
+
+  creadoEn      DateTime @default(now())
+  actualizadoEn DateTime @updatedAt
+}
+
+
+model HorarioAtencion {
+  id            String    @id @default(uuid())
+  dia           DiaSemana
+  horaApertura  String
+  horaCierre    String
+
+  restaurante   Restaurante @relation(fields: [restauranteId], references: [id])
+  restauranteId String
+
+  @@unique([restauranteId, dia])
+  @@index([restauranteId])
+}
+
+enum EstadoPedido {
+  RECIBIDO
+  EN_PREPARACION
+  LISTO
+  ENTREGADO
+}
+enum EstadoCuenta {
+  ABIERTA
+  CERRADA
+  CANCELADA
+}
+enum DiaSemana {
+  LUNES
+  MARTES
+  MIERCOLES
+  JUEVES
+  VIERNES
+  SABADO
+  DOMINGO
+}
