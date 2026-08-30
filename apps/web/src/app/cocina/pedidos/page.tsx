@@ -1,0 +1,19 @@
+"use client";
+
+import AppShell from "@/components/ui/AppShell/AppShell";
+
+export default function CocinaPage() {
+
+return (
+<AppShell mode="cocina">
+<div className="p-[var(--spacing-lg)]">
+    <h1 className="text-2xl font-bold text-[var(--color-text)]">
+        Pedidos
+    </h1>
+    <p className="mt-2 text-[var(--color-text-secondary)]">
+        Pedidos pendientes y solicitudes recibidas desde las mesas.
+    </p>
+</div>
+</AppShell>
+);
+}
