@@ -1,8 +1,10 @@
 @import "tailwindcss";
 
-/*PALETA DEL COMENSAL / PÚBLICA*/
+/*PALETA COWPAY*/
 
 :root {
+
+  /*PALETA DEL COMENSAL / PÚBLICA*/
   /* Colores principales */
   --color-primary: #f97316;
   --color-primary-hover: #ea580c;
@@ -11,56 +13,65 @@
 
   /* Neutros de Comensal */
   --color-background: #fffdf9;
-  --color-surface: #ffffff; /* Se usa para resaltar la pantalla blanca del fronted al momento de crear una tarjeta o algo parecido */
   --color-text: #1f2937;
-  --color-text-secondary: #6b7280;
   --color-border: #e5e7eb;
 
   /*MODOS DE TRABAJO Administrador / Mesero / Cocina*/
-
-  /*ADMINISTRADOR*/
-  --admin-primary: #7c3aed;
+  /* Administrador */
+  --admin-primary: #955ef4;
   --admin-hover: #6d28d9;
   --admin-active: #5b21b6;
   --admin-light: #ede9fe;
 
-  /*MESERO*/
-  --mesero-primary: #0f766e;
-  --mesero-hover: #0d9488;
+  /* Mesero */
+  --mesero-primary: #0d9488;
+  --mesero-hover: #0f766e;
   --mesero-active: #0d6f63;
   --mesero-light: #ccfbf1;
 
-  /*COCINA*/
+  /* Cocina */
   --cocina-primary: #6b4f3a;
   --cocina-hover: #543d2d;
   --cocina-active: #463326;
   --cocina-light: #e8ded6;
 
-  /*NEUTROS — MODOS DE TRABAJO
-Compartidos por Administrador, Mesero y Cocina*/
+  /*NEUTROS — MODOS DE TRABAJO Compartidos por Administrador, Mesero y Cocina*/
   --work-dark: #1f2937;
   --work-background: #f8fafc;
-  --work-surface: #ffffff;
   --work-text: #111827;
-  --work-text-secondary: #6b7280;
   --work-border: #e2e8f0;
 
-  /*ESTADOS — COMPARTIDOS Comensal + Administrador + Mesero + Cocina*/
+  /*NEUTROS COMPARTIDOS*/
 
+  /* Superficie blanca para tarjetas, modales, etc. */
+  --color-surface: #ffffff;
+  --color-text-secondary: #6b7280;
+  --color-text-white: #ffffff;
+
+  /*INTERACCIONES NEUTRAS*/
+  --color-neutral-light: #f9fafb;
+  --color-neutral-hover: #f3f4f6;
+  --color-neutral-active: #e5e7eb;
+
+  /*ESTADOS Compartidos por Comensal + Administrador + Mesero + Cocina*/
   /* Success */
   --color-success: #16a34a;
+  --color-success-active: #15803d;
   --color-success-light: #dcfce7;
 
   /* Warning */
   --color-warning: #f59e0b;
+  --color-warning-active: #d97706;
   --color-warning-light: #fef3c7;
 
   /* Error */
   --color-error: #dc2626;
+  --color-error-active: #b91c1c;
   --color-error-light: #fee2e2;
 
   /* Info */
   --color-info: #2563eb;
+  --color-info-active: #1d4ed8;
   --color-info-light: #dbeafe;
 
   /*ESPACIADOS*/
@@ -72,7 +83,9 @@ Compartidos por Administrador, Mesero y Cocina*/
   --spacing-2xl: 40px;
   --spacing-3xl: 48px;
 
+
   /*TIPOGRAFÍA GENERAL*/
+
   --font-family: Inter, sans-serif;
 
   /* Título principal */
@@ -99,28 +112,33 @@ Compartidos por Administrador, Mesero y Cocina*/
   --font-size-button: 16px;
   --font-weight-button: 500;
 
+  /* Labels */
+  --font-size-label: 14px;
+  --font-weight-label: 500;
+
+  /* Mensajes de error */
+  --font-size-error: 14px;
+  --font-weight-error: 400;
+
   /* Texto secundario */
   --font-size-secondary: 14px;
   --font-weight-secondary: 400;
 
-  /* Etiquetas / información pequeña */
+  /* Texto pequeño */
   --font-size-small: 12px;
   --font-weight-small: 400;
 }
 
-/*APLICACIÓN DE TIPOGRAFIA*/
-
+/*APLICACIÓN DE TIPOGRAFÍA*/
 body {
   font-family: var(--font-family);
 }
 
 /*TÍTULOS*/
-
 h1 {
   font-size: var(--font-size-title);
   font-weight: var(--font-weight-title);
 }
-
 h2,
 h3 {
   font-size: var(--font-size-section);
@@ -128,7 +146,6 @@ h3 {
 }
 
 /*TEXTO*/
-
 p {
   font-size: var(--font-size-body);
   font-weight: var(--font-weight-body);
