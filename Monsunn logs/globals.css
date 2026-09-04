@@ -1,0 +1,285 @@
+:root {
+  --color-background: #f3f5f9;
+  --color-surface: #ffffff;
+  --color-text: #1f2937;
+  --color-text-secondary: #6b7280;
+  --color-border: #e5e7eb;
+  --color-success: #16a34a;
+  --color-info: #2563eb;
+  --color-info-light: #dbeafe;
+
+  --cp-primary: #f97316;
+  --cp-hover: #ea580c;
+
+  --mesero-primary: #0f766e;
+  --mesero-hover: #0d9488;
+
+  --cocina-primary: #6b4f3a;
+  --cocina-hover: #543d2d;
+
+  --admin-primary: #7c3aed;
+  --admin-hover: #6d28d9;
+
+  --caja-primary: #16a34a;
+  --caja-hover: #15803d;
+}
+
+html, body {
+  min-height: 100%;
+  background: var(--color-background);
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-geist-sans), Arial, sans-serif;
+}
+
+.field {
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  background: var(--color-surface);
+}
+
+.btn {
+  color: #fff;
+}
+
+.btn-cp { background-color: var(--cp-primary); }
+.btn-cp:hover { background-color: var(--cp-hover); }
+.btn-mesero { background-color: var(--mesero-primary); }
+.btn-mesero:hover { background-color: var(--mesero-hover); }
+.btn-cocina { background-color: var(--cocina-primary); }
+.btn-cocina:hover { background-color: var(--cocina-hover); }
+.btn-admin { background-color: var(--admin-primary); }
+.btn-admin:hover { background-color: var(--admin-hover); }
+.btn-caja { background-color: var(--caja-primary); }
+.btn-caja:hover { background-color: var(--caja-hover); }
+
+.login-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 24px;
+  background: #f3f5f9;
+}
+
+.login-card {
+  width: min(100%, 480px);
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid #e5e7eb;
+  border-radius: 20px;
+  padding: 30px 30px 22px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+}
+
+.login-title {
+  margin: 0 0 8px;
+  font-size: clamp(2rem, 2vw + 0.8rem, 2.4rem);
+  line-height: 1.2;
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  color: #1f2937;
+}
+
+.login-subtitle {
+  margin: 0 0 24px;
+  font-size: 0.95rem;
+  color: #6b7280;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.login-field {
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.login-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 18px;
+  height: 18px;
+  color: #7b8192;
+}
+
+.login-input {
+  display: block;
+  width: 100%;
+  min-height: 52px;
+  box-sizing: border-box;
+  border: 1px solid #d5d9e0;
+  border-radius: 12px;
+  background: #fff;
+  padding: 0 52px 0 46px;
+  font-size: 1rem;
+  color: #111827;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.login-input::placeholder {
+  color: #9aa0ac;
+}
+
+.login-input:focus {
+  border-color: rgba(124, 58, 237, 0.75);
+  box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.1);
+}
+
+.login-toggle {
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  color: #717a8d;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 2px;
+  margin-bottom: 10px;
+}
+
+.login-remember {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #374151;
+  cursor: pointer;
+}
+
+.login-remember input {
+  width: 16px;
+  height: 16px;
+  accent-color: var(--admin-primary);
+  cursor: pointer;
+}
+
+.login-link {
+  font-size: 0.95rem;
+  text-decoration: none;
+  color: #8b3df1;
+  font-weight: 600;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+.login-button {
+  display: block;
+  width: 100%;
+  min-height: 54px;
+  box-sizing: border-box;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(180deg, var(--admin-primary) 0%, var(--admin-hover) 100%);
+  color: #fff;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 0.2s ease, filter 0.2s ease;
+  box-shadow: 0 12px 20px rgba(124, 58, 237, 0.18);
+}
+
+.login-card--mesero .login-button {
+  background: linear-gradient(180deg, var(--mesero-primary) 0%, var(--mesero-hover) 100%);
+  box-shadow: 0 12px 20px rgba(15, 118, 110, 0.18);
+}
+
+.login-card--cocina .login-button {
+  background: linear-gradient(180deg, var(--cocina-primary) 0%, var(--cocina-hover) 100%);
+  box-shadow: 0 12px 20px rgba(107, 79, 58, 0.18);
+}
+
+.login-card--caja .login-button {
+  background: linear-gradient(180deg, var(--caja-primary) 0%, var(--caja-hover) 100%);
+  box-shadow: 0 12px 20px rgba(22, 163, 74, 0.18);
+}
+
+.login-card--comensal .login-button {
+  background: linear-gradient(180deg, var(--cp-primary) 0%, var(--cp-hover) 100%);
+  box-shadow: 0 12px 20px rgba(249, 115, 22, 0.18);
+}
+
+.login-card--super-admin .login-button,
+.login-card--admin .login-button {
+  background: linear-gradient(180deg, var(--admin-primary) 0%, var(--admin-hover) 100%);
+  box-shadow: 0 12px 20px rgba(124, 58, 237, 0.18);
+}
+
+.login-card--mesero .login-link,
+.login-card--mesero .login-remember {
+  color: var(--mesero-primary);
+}
+
+.login-card--cocina .login-link,
+.login-card--cocina .login-remember {
+  color: var(--cocina-primary);
+}
+
+.login-card--caja .login-link,
+.login-card--caja .login-remember {
+  color: var(--caja-primary);
+}
+
+.login-card--comensal .login-link,
+.login-card--comensal .login-remember {
+  color: var(--cp-primary);
+}
+
+.login-card--super-admin .login-link,
+.login-card--admin .login-link,
+.login-card--super-admin .login-remember,
+.login-card--admin .login-remember {
+  color: var(--admin-primary);
+}
+
+.login-button:hover {
+  filter: brightness(1.02);
+}
+
+.login-button:active {
+  transform: translateY(1px);
+}
+
+.login-footnote {
+  margin: 18px 0 0;
+  text-align: center;
+  color: #7a818f;
+  font-size: 0.72rem;
+}
+
+@media (max-width: 480px) {
+  .login-card {
+    padding: 20px 18px 18px;
+    border-radius: 18px;
+  }
+
+  .login-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .login-link {
+    align-self: flex-end;
+  }
+}
