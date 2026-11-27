@@ -87,9 +87,9 @@
   },
   {
     "ref": "PUB-01",
-    "title": "Construir inicio y navegación pública",
-    "owner": "Jehan Useche",
-    "due": "2026-11-26",
+    "title": "FRONTEND; Terminar landing, footer y navegación pública",
+    "owner": "Jhean Useche",
+    "due": "2026-12-03",
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=653-500",
     "subtasks": [
       {
@@ -129,14 +129,16 @@
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "phase": "frontend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
   },
   {
     "ref": "PUB-02",
     "title": "Construir directorio y ficha de restaurante",
     "owner": "Jehan Useche",
-    "due": "2026-11-30",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=312-1473",
     "subtasks": [
       {
@@ -145,8 +147,10 @@
         "jiraKey": "KAN-34",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar ficha de restaurante con datos de ejemplo y recursos del Figma",
@@ -154,8 +158,10 @@
         "jiraKey": "KAN-35",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Conectar directorio, ficha y retorno con navegación; sin implementar búsqueda real",
@@ -163,8 +169,10 @@
         "jiraKey": "KAN-36",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "publico",
@@ -172,18 +180,20 @@
     "points": 5,
     "jiraKey": "KAN-4",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-30",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "PUB-03",
     "title": "Completar páginas informativas esenciales",
     "owner": "Jehan Useche",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=313-1999",
     "subtasks": [
       {
@@ -192,8 +202,10 @@
         "jiraKey": "KAN-37",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar Planes, Contacto y formulario visual sin validación",
@@ -201,8 +213,10 @@
         "jiraKey": "KAN-38",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Completar páginas informativas acordadas y revisar enlaces y responsive",
@@ -210,8 +224,10 @@
         "jiraKey": "KAN-39",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "publico",
@@ -219,18 +235,20 @@
     "points": 5,
     "jiraKey": "KAN-5",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "COM-00",
     "title": "Completar bocetos de las pantallas faltantes del comensal",
     "owner": "Oscar Rojas",
-    "due": "2026-11-24",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5333",
     "area": "comensal",
     "folder": "Figma, docs y src/features/comensal después de acordar bocetos",
@@ -241,39 +259,47 @@
         "points": 1,
         "jiraKey": "KAN-40",
         "voiceUpdated": true,
-        "due": "2026-11-24",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-24",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Preparar bocetos sencillos de los huecos del flujo mesa, menú, carrito, pedido y cuenta",
         "points": 2,
         "jiraKey": "KAN-41",
         "voiceUpdated": true,
-        "due": "2026-11-24",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-24",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Acordar versión mínima y enlaces con el equipo antes de maquetar cada hueco",
         "points": 2,
         "jiraKey": "KAN-42",
         "voiceUpdated": true,
-        "due": "2026-11-24",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-24",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "jiraKey": "KAN-6",
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-24",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "COM-01",
     "title": "Construir entrada de mesa, menú y detalle",
     "owner": "Oscar Rojas",
-    "due": "2026-11-27",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5417",
     "subtasks": [
       {
@@ -281,42 +307,50 @@
         "points": 1,
         "jiraKey": "KAN-43",
         "voiceUpdated": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar menú y categorías con platos fijos, disponibles y agotados",
         "points": 2,
         "jiraKey": "KAN-44",
         "voiceUpdated": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar detalle de plato y enlazarlo al carrito; sin validaciones",
         "points": 2,
         "jiraKey": "KAN-45",
         "voiceUpdated": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "comensal",
     "folder": "src/features/comensal y public/media/comensal",
     "points": 5,
     "jiraKey": "KAN-7",
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-27",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "COM-02",
     "title": "Maquetar carrito y seguimiento visual del pedido",
     "owner": "Oscar Rojas",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5661",
     "subtasks": [
       {
@@ -324,42 +358,50 @@
         "points": 2,
         "jiraKey": "KAN-46",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar confirmación de envío y pantalla de estado con datos fijos",
         "points": 2,
         "jiraKey": "KAN-47",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Conectar menú, carrito y seguimiento con rutas; sin persistencia ni pedidos reales",
         "points": 1,
         "jiraKey": "KAN-48",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "comensal",
     "folder": "src/features/comensal y public/media/comensal",
     "points": 5,
     "jiraKey": "KAN-8",
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "COM-03",
     "title": "Maquetar cuenta, división y pago visual",
     "owner": "Oscar Rojas",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-5879",
     "subtasks": [
       {
@@ -367,53 +409,52 @@
         "points": 1,
         "jiraKey": "KAN-49",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar método de pago y confirmación sin cálculos ni cobro real",
         "points": 2,
         "jiraKey": "KAN-50",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Conectar el recorrido visual y revisar las pantallas faltantes acordadas",
         "points": 2,
         "jiraKey": "KAN-51",
         "voiceUpdated": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "comensal",
     "folder": "src/features/comensal y public/media/comensal",
     "points": 5,
     "jiraKey": "KAN-9",
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "MES-01",
-    "title": "Construir acceso, panel y listado de mesas",
+    "title": "FRONTEND ENTREGADO; Panel y navegación de mesero; PR #23",
     "owner": "Samuel Correa",
-    "due": "2026-11-26",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-61",
     "subtasks": [
-      {
-        "title": "Maquetar acceso del mesero y variante de error si existe en Figma",
-        "points": 1,
-        "jiraKey": "KAN-52",
-        "voiceUpdated": true,
-        "assigned": true,
-        "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
-      },
       {
         "title": "Maquetar navegación y panel principal del mesero",
         "points": 2,
@@ -421,35 +462,33 @@
         "voiceUpdated": true,
         "assigned": true,
         "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
-      },
-      {
-        "title": "Maquetar listado y detalle de mesas con enlaces y CSS responsive",
-        "points": 2,
-        "jiraKey": "KAN-54",
-        "voiceUpdated": true,
-        "assigned": true,
-        "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27",
+        "owner": "Samuel ",
+        "verifiedStatus": "Finalizada"
       }
     ],
     "area": "mesero",
     "folder": "src/features/mesero y public/media/mesero",
-    "points": 5,
+    "points": 2,
     "jiraKey": "KAN-10",
     "assigned": true,
     "sprintId": 1,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-27",
+    "previousDue": "2026-11-26",
+    "planningStatus": "En sprint; frontend rescatado o evidencia entregada",
+    "verifiedStatus": "Finalizada",
+    "phase": "frontend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
   },
   {
     "ref": "MES-02",
     "title": "Construir registro y seguimiento de pedidos",
     "owner": "Samuel Correa",
-    "due": "2026-11-30",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-916",
     "subtasks": [
       {
@@ -458,8 +497,10 @@
         "jiraKey": "KAN-55",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar formulario de observaciones y confirmación sin validación",
@@ -467,8 +508,10 @@
         "jiraKey": "KAN-56",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar seguimiento de pedidos y enlazar las pantallas de ejemplo",
@@ -476,8 +519,23 @@
         "jiraKey": "KAN-57",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
+      },
+      {
+        "title": "Maquetar listado y detalle de mesas con enlaces y CSS responsive",
+        "points": 2,
+        "jiraKey": "KAN-54",
+        "voiceUpdated": true,
+        "assigned": true,
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-26",
+        "planningStatus": "Aplazado; conservamos alcance anterior",
+        "owner": "Samuel ",
+        "verifiedStatus": "En curso"
       }
     ],
     "area": "mesero",
@@ -485,18 +543,20 @@
     "points": 5,
     "jiraKey": "KAN-11",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-30",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "MES-03",
     "title": "Maquetar cuenta, efectivo y cierre de mesa",
     "owner": "Samuel Correa",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-1318",
     "subtasks": [
       {
@@ -505,8 +565,10 @@
         "jiraKey": "KAN-58",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar efectivo y confirmación de cierre como pantallas o diálogos de ejemplo",
@@ -514,8 +576,10 @@
         "jiraKey": "KAN-59",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Completar perfil básico y revisar enlaces de todo el recorrido",
@@ -523,8 +587,10 @@
         "jiraKey": "KAN-60",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "mesero",
@@ -532,37 +598,32 @@
     "points": 5,
     "jiraKey": "KAN-12",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "COC-01",
     "title": "Construir tablero de cocina",
     "owner": "Santiago Evanz",
-    "due": "2026-11-27",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-4098",
     "subtasks": [
-      {
-        "title": "Maquetar acceso y estructura visual de cocina",
-        "points": 1,
-        "jiraKey": "KAN-61",
-        "voiceUpdated": true,
-        "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
-      },
       {
         "title": "Construir tarjetas de pedido con mesa, hora y observaciones de ejemplo",
         "points": 2,
         "jiraKey": "KAN-62",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Mostrar variantes de estados y contadores fijos; navegación de demo sin tiempo real",
@@ -570,8 +631,10 @@
         "jiraKey": "KAN-63",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "cocina",
@@ -579,37 +642,32 @@
     "points": 5,
     "jiraKey": "KAN-13",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-27",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "CAJ-01",
     "title": "Construir apertura de caja y cuentas abiertas",
     "owner": "Santiago Evanz",
-    "due": "2026-11-27",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=457-338",
     "subtasks": [
-      {
-        "title": "Maquetar acceso y formulario visual de apertura de caja",
-        "points": 1,
-        "jiraKey": "KAN-64",
-        "voiceUpdated": true,
-        "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
-      },
       {
         "title": "Maquetar lista de cuentas abiertas y detalle con datos fijos",
         "points": 2,
         "jiraKey": "KAN-65",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar pantalla de cobro y confirmación enlazadas; sin validación ni pago",
@@ -617,8 +675,10 @@
         "jiraKey": "KAN-66",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "caja",
@@ -626,18 +686,20 @@
     "points": 5,
     "jiraKey": "KAN-14",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-27",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "CAJ-02",
     "title": "Completar historial y resumen de turno",
     "owner": "Santiago Evanz",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=460-510",
     "subtasks": [
       {
@@ -646,8 +708,10 @@
         "jiraKey": "KAN-67",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar turno y cierre como pantallas de demostración",
@@ -655,8 +719,10 @@
         "jiraKey": "KAN-68",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Revisar navegación, recursos propios y adaptación a celular/escritorio",
@@ -664,8 +730,10 @@
         "jiraKey": "KAN-69",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "caja",
@@ -673,37 +741,32 @@
     "points": 5,
     "jiraKey": "KAN-15",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "ADM-01",
     "title": "Construir acceso y panel del restaurante",
     "owner": "Santiago Diaz Palma",
-    "due": "2026-11-26",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-2344",
     "subtasks": [
-      {
-        "title": "Maquetar acceso de administrador y navegación privada",
-        "points": 1,
-        "jiraKey": "KAN-70",
-        "voiceUpdated": true,
-        "assigned": true,
-        "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
-      },
       {
         "title": "Construir panel principal del restaurante con cifras de ejemplo",
         "points": 2,
         "jiraKey": "KAN-71",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-26",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Revisar layout y CSS responsive; no enlazar administración desde el sitio público",
@@ -711,8 +774,10 @@
         "jiraKey": "KAN-72",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-26",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-26",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "admin",
@@ -720,18 +785,20 @@
     "points": 4,
     "jiraKey": "KAN-16",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-26",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "ADM-02",
     "title": "Construir menú e inventario",
     "owner": "Santiago Diaz Palma",
-    "due": "2026-11-30",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=749-3079",
     "subtasks": [
       {
@@ -740,8 +807,10 @@
         "jiraKey": "KAN-73",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar inventario, ingredientes y alertas con datos fijos",
@@ -749,8 +818,10 @@
         "jiraKey": "KAN-74",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Mostrar diálogos de ejemplo y enlazar variantes sin validar ni guardar datos",
@@ -758,8 +829,10 @@
         "jiraKey": "KAN-75",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-11-30",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-30",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "admin",
@@ -767,18 +840,20 @@
     "points": 5,
     "jiraKey": "KAN-17",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-11-30",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "ADM-03",
     "title": "Construir personal y Superadmin mínimo",
     "owner": "Santiago Diaz Palma",
-    "due": "2026-12-03",
+    "due": null,
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=745-39170",
     "subtasks": [
       {
@@ -787,8 +862,10 @@
         "jiraKey": "KAN-76",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Maquetar Superadmin, lista de solicitudes y detalle con decisiones de ejemplo",
@@ -796,8 +873,10 @@
         "jiraKey": "KAN-77",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       },
       {
         "title": "Conectar páginas privadas visuales; noindex y sin enlaces públicos; sin autenticación real",
@@ -805,8 +884,10 @@
         "jiraKey": "KAN-78",
         "voiceUpdated": true,
         "assigned": true,
-        "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-12-03",
+        "planningStatus": "Aplazado; conservamos alcance anterior"
       }
     ],
     "area": "admin",
@@ -814,43 +895,45 @@
     "points": 5,
     "jiraKey": "KAN-18",
     "assigned": true,
-    "sprintId": 1,
+    "sprintId": null,
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
-    "jiraUpdated": "2026-11-20"
+    "scheduleUpdated": "2026-11-27",
+    "jiraUpdated": "2026-11-20",
+    "previousDue": "2026-12-03",
+    "planningStatus": "Aplazado; conservamos alcance anterior"
   },
   {
     "ref": "INT-01",
-    "title": "Integrar navegación y datos de las cinco áreas",
+    "title": "Integrar landing, accesos y CRUD con datos reales",
     "owner": "Oscar Rojas",
     "due": "2026-12-04",
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
     "subtasks": [
       {
-        "title": "Revisar PR y coherencia visual de las cinco áreas",
+        "title": "Revisar e integrar PR de base, autenticación y módulos de cuentas",
         "points": 2,
         "jiraKey": "KAN-79",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Recorrer enlaces de las cinco áreas con datos de ejemplo",
+        "title": "Probar el recorrido de alta y acceso de los seis roles",
         "points": 2,
         "jiraKey": "KAN-80",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Corregir enlaces rotos y documentar partes visuales pendientes",
+        "title": "Corregir integración y documentar funciones aplazadas",
         "points": 1,
         "jiraKey": "KAN-81",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       }
     ],
     "area": "integracion",
@@ -861,39 +944,39 @@
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
+    "scheduleUpdated": "2026-11-27",
     "jiraUpdated": "2026-11-20"
   },
   {
     "ref": "INT-02",
-    "title": "Preparar privacidad administrativa y prueba final",
+    "title": "Probar sesiones, permisos, aislamiento y entrega reproducible",
     "owner": "Oscar Rojas",
     "due": "2026-12-04",
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
     "subtasks": [
       {
-        "title": "Revisar noindex y ausencia de enlaces administrativos en la parte pública",
+        "title": "Probar permisos y separación de datos entre restaurantes",
         "points": 1,
         "jiraKey": "KAN-82",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Mantener índice de demo solo local/controlado y documentar acceso real pendiente",
+        "title": "Probar logout, desactivación y recuperación supervisada",
         "points": 1,
         "jiraKey": "KAN-83",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Comprobar instalación con pnpm, compilación y navegación con el equipo",
+        "title": "Verificar instalación, migraciones, seed y compilación",
         "points": 2,
         "jiraKey": "KAN-84",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       }
     ],
     "area": "integracion",
@@ -904,7 +987,7 @@
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
+    "scheduleUpdated": "2026-11-27",
     "jiraUpdated": "2026-11-20"
   },
   {
@@ -950,20 +1033,20 @@
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
     "subtasks": [
       {
-        "title": "Revisar avances y pendientes; acordar alcance restante y ayuda entre compañeros",
+        "title": "Revisar evidencias y acordar el cambio de alcance a backend",
         "points": 1,
         "jiraKey": "KAN-87",
         "voiceUpdated": true,
         "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Preparar acta e informe semanal con PR, dificultades y responsables de resolver",
+        "title": "Registrar el avance real, cambio de alcance y riesgos para la instructora",
         "points": 1,
         "jiraKey": "KAN-88",
         "voiceUpdated": true,
         "due": "2026-11-27",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       }
     ],
     "area": "seguimiento",
@@ -985,20 +1068,20 @@
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
     "subtasks": [
       {
-        "title": "Revisar frontend integrado y estado real de tareas al cerrar el periodo",
+        "title": "Revisar la entrega mínima integrada y los pendientes el 4",
         "points": 1,
         "jiraKey": "KAN-89",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Preparar acta e informe de cierre con evidencias y pendientes para la instructora",
+        "title": "Preparar acta e informe de cierre con evidencias del backend",
         "points": 1,
         "jiraKey": "KAN-90",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       }
     ],
     "area": "seguimiento",
@@ -1014,34 +1097,34 @@
   },
   {
     "ref": "ENT-01",
-    "title": "Preparar demostración y entrega del 7 de diciembre",
+    "title": "Preparar demostración de landing, accesos y CRUD para el 7 de diciembre",
     "owner": "Oscar Rojas",
     "due": "2026-12-07",
     "figma": "https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1",
     "subtasks": [
       {
-        "title": "Ensayar el 3 de diciembre en el SENA con participación de los cinco",
+        "title": "Ensayar el 3 la landing, altas, accesos y recuperación",
         "points": 1,
         "jiraKey": "KAN-91",
         "voiceUpdated": true,
         "due": "2026-12-03",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Corregir errores visuales el 4 de diciembre y preparar capturas e informe final dentro de la jornada",
+        "title": "Corregir integración y preparar evidencia final el 4",
         "points": 1,
         "jiraKey": "KAN-92",
         "voiceUpdated": true,
         "due": "2026-12-04",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       },
       {
-        "title": "Entregar el 7 la versión frontend y documentar qué queda para backend",
+        "title": "Entregar el 7 landing, accesos y CRUD con base de datos",
         "points": 1,
         "jiraKey": "KAN-93",
         "voiceUpdated": true,
         "due": "2026-12-07",
-        "jiraUpdated": "2026-11-20"
+        "jiraUpdated": "2026-11-27"
       }
     ],
     "area": "entrega",
@@ -1052,7 +1135,517 @@
     "estimateField": "customfield_10016",
     "supportHours": "SENA: lunes, martes, jueves y viernes de 13:00 a 18:00. Miércoles inglés. Sin atención después de la jornada.",
     "start": "2026-11-21",
-    "scheduleUpdated": "2026-11-20",
+    "scheduleUpdated": "2026-11-27",
     "jiraUpdated": "2026-11-20"
+  },
+  {
+    "ref": "BE-01",
+    "title": "BACKEND; Base de datos e inicialización de Superadmin",
+    "owner": "Oscar Rojas",
+    "due": "2026-11-30",
+    "points": 5,
+    "jiraKey": "KAN-94",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Por hacer; implementación pendiente",
+    "subtasks": [
+      {
+        "title": "Definir usuarios, restaurantes y permisos; publicar contrato de datos",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-11-30",
+        "points": 2,
+        "jiraKey": "KAN-99",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Preparar conexión, migraciones y ejemplo de variables sin secretos",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-11-30",
+        "points": 2,
+        "jiraKey": "KAN-100",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Inicializar únicamente nuestra cuenta de Superadmin",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-11-30",
+        "points": 1,
+        "jiraKey": "KAN-101",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      }
+    ],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "phase": "backend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend."
+  },
+  {
+    "ref": "AUTH-01",
+    "title": "BACKEND; Autenticación, sesiones, permisos y recuperación",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-02",
+    "points": 9,
+    "jiraKey": "KAN-95",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Por hacer; implementación pendiente",
+    "subtasks": [
+      {
+        "title": "Acordar biblioteca y contrato único para iniciar y cerrar sesión",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-11-30",
+        "points": 1,
+        "jiraKey": "KAN-102",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Implementar login, sesión persistente y cierre de sesión",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-01",
+        "points": 3,
+        "jiraKey": "KAN-103",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Aplicar permisos por rol y aislamiento por restaurante",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-01",
+        "points": 2,
+        "jiraKey": "KAN-104",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Probar errores, sesión y accesos indebidos con dos restaurantes",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-01",
+        "points": 1,
+        "jiraKey": "KAN-105",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "title": "Preparar recuperación supervisada del personal y de administradores",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-02",
+        "points": 2,
+        "jiraKey": "KAN-119",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      }
+    ],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "phase": "backend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend."
+  },
+  {
+    "ref": "SUP-CRUD-01",
+    "title": "FRONTEND; Pantallas de Superadmin y administrador",
+    "owner": "Santiago Diaz Palma",
+    "due": "2026-12-01",
+    "points": 6,
+    "jiraKey": "KAN-96",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Por hacer; implementación pendiente",
+    "subtasks": [
+      {
+        "title": "Construir frontend del login de administrador",
+        "points": 1,
+        "jiraKey": "KAN-70",
+        "voiceUpdated": true,
+        "assigned": true,
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-26",
+        "planningStatus": "En sprint; frontend rescatado o evidencia entregada",
+        "owner": "Santiago Diaz Palma",
+        "verifiedStatus": "En curso"
+      },
+      {
+        "title": "Preparar acceso y panel mínimo de Superadmin fuera del layout de acceso",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-01",
+        "points": 1,
+        "jiraKey": "KAN-106",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "jiraKey": "KAN-126",
+        "title": "Separar acceso y panel de admin y superadmin y revisar imports",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-11-30",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-96"
+      },
+      {
+        "jiraKey": "KAN-134",
+        "title": "FRONTEND; Maquetar gestión de restaurantes y administradores",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-01",
+        "phase": "frontend",
+        "parent": "KAN-96",
+        "planningStatus": "Por hacer; maquetación sin conexión real"
+      }
+    ],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "phase": "frontend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
+  },
+  {
+    "ref": "ADM-CRUD-01",
+    "title": "FRONTEND; Login de mesero y pantallas de gestión de personal",
+    "owner": "Samuel Correa",
+    "due": "2026-12-01",
+    "points": 4,
+    "jiraKey": "KAN-97",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Por hacer; implementación pendiente",
+    "subtasks": [
+      {
+        "title": "Construir frontend del login de mesero",
+        "points": 1,
+        "jiraKey": "KAN-52",
+        "voiceUpdated": true,
+        "assigned": true,
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-26",
+        "planningStatus": "En sprint; frontend rescatado o evidencia entregada",
+        "owner": "Samuel ",
+        "verifiedStatus": "En curso"
+      },
+      {
+        "title": "Preparar formulario de personal con el contrato compartido",
+        "owner": "Samuel ",
+        "due": "2026-12-01",
+        "points": 2,
+        "jiraKey": "KAN-111",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "jiraKey": "KAN-125",
+        "title": "Separar acceso y panel de mesero y corregir sus imports",
+        "owner": "Samuel ",
+        "due": "2026-11-30",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-97"
+      }
+    ],
+    "verifiedStatus": "En curso",
+    "jiraUpdated": "2026-11-27",
+    "phase": "frontend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
+  },
+  {
+    "ref": "ACC-01",
+    "title": "FRONTEND; Registro y login del comensal",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-01",
+    "points": 1,
+    "jiraKey": "KAN-98",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Por hacer; implementación pendiente",
+    "subtasks": [],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "phase": "frontend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
+  },
+  {
+    "ref": "BASE-03",
+    "title": "Corregir layouts de acceso y sus imports en las ramas de cada responsable",
+    "owner": "Oscar Rojasricor",
+    "due": null,
+    "points": 1,
+    "jiraKey": "KAN-120",
+    "sprintId": null,
+    "scheduleUpdated": "2026-11-27",
+    "planningStatus": "Backlog; coordinación anterior sustituida por frontend de cada responsable",
+    "subtasks": [],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27"
+  },
+  {
+    "ref": "BE-02",
+    "jiraKey": "KAN-121",
+    "title": "BACKEND; CRUD de restaurantes, administradores y personal",
+    "owner": "Oscar Rojas",
+    "due": "2026-12-02",
+    "points": 5,
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "subtasks": [
+      {
+        "jiraKey": "KAN-122",
+        "title": "Preparar contratos y operaciones de restaurantes y administradores",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-02",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "jiraKey": "KAN-123",
+        "title": "Preparar operaciones de personal aisladas por restaurante",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-02",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      },
+      {
+        "jiraKey": "KAN-124",
+        "title": "Preparar registro público de comensal y ejemplo de interfaz conectada",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-02",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27"
+      }
+    ],
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "phase": "backend",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend."
+  },
+  {
+    "title": "FRONTEND; Accesos de cocina y cajero",
+    "owner": "Santiago Evanz",
+    "due": "2026-12-01",
+    "points": 3,
+    "jiraKey": "KAN-116",
+    "estimateInDescription": true,
+    "verifiedStatus": "Tareas por hacer",
+    "jiraUpdated": "2026-11-27",
+    "sprintId": 1,
+    "subtasks": [
+      {
+        "title": "Maquetar acceso y estructura visual de cocina",
+        "points": 1,
+        "jiraKey": "KAN-61",
+        "voiceUpdated": true,
+        "assigned": true,
+        "due": "2026-11-27",
+        "jiraUpdated": "2026-11-27",
+        "owner": "Santiago Evanz",
+        "verifiedStatus": "Finalizada",
+        "planningStatus": "En sprint; frontend rescatado o evidencia entregada"
+      },
+      {
+        "title": "Construir frontend del login de cajero",
+        "points": 1,
+        "jiraKey": "KAN-64",
+        "voiceUpdated": true,
+        "assigned": true,
+        "due": null,
+        "jiraUpdated": "2026-11-27",
+        "previousDue": "2026-11-27",
+        "planningStatus": "En sprint; frontend rescatado o evidencia entregada",
+        "owner": "Santiago Evanz",
+        "verifiedStatus": "Tareas por hacer"
+      }
+    ],
+    "phase": "frontend",
+    "scheduleUpdated": "2026-11-27",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend."
+  },
+  {
+    "jiraKey": "KAN-130",
+    "subtasks": [
+      {
+        "title": "Conectar formulario de restaurante y admin a la base compartida",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-02",
+        "points": 2,
+        "jiraKey": "KAN-107",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-130"
+      },
+      {
+        "title": "Listar, consultar y editar restaurantes y administradores",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-03",
+        "points": 2,
+        "jiraKey": "KAN-108",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-130"
+      },
+      {
+        "title": "Desactivar cuentas y restaurantes y comprobar sus accesos",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-03",
+        "points": 1,
+        "jiraKey": "KAN-109",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-130"
+      },
+      {
+        "title": "Restablecer acceso del administrador y demostrar el recorrido completo",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-03",
+        "points": 2,
+        "jiraKey": "KAN-110",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-130"
+      },
+      {
+        "title": "Conectar acceso de admin y Superadmin sin duplicar autenticación",
+        "owner": "Santiago Diaz Palma",
+        "due": "2026-12-02",
+        "points": 1,
+        "jiraKey": "KAN-117",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-130"
+      }
+    ],
+    "title": "INTEGRACIÓN; Conectar interfaces de Superadmin y admin",
+    "owner": "Santiago Diaz Palma",
+    "phase": "integracion",
+    "points": 3,
+    "due": "2026-12-03",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion."
+  },
+  {
+    "jiraKey": "KAN-131",
+    "subtasks": [
+      {
+        "title": "Conectar alta, listado y detalle de personal al servidor",
+        "owner": "Samuel ",
+        "due": "2026-12-02",
+        "points": 2,
+        "jiraKey": "KAN-112",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-131"
+      },
+      {
+        "title": "Editar datos y desactivar personal sin cruzar restaurantes",
+        "owner": "Samuel ",
+        "due": "2026-12-03",
+        "points": 2,
+        "jiraKey": "KAN-113",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-131"
+      },
+      {
+        "title": "Atender solicitudes de recuperación y verificar el CRUD completo",
+        "owner": "Samuel ",
+        "due": "2026-12-03",
+        "points": 1,
+        "jiraKey": "KAN-114",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-131"
+      },
+      {
+        "title": "Conectar login de mesero y cierre de sesión del panel",
+        "owner": "Samuel ",
+        "due": "2026-12-02",
+        "points": 1,
+        "jiraKey": "KAN-115",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-131"
+      }
+    ],
+    "title": "INTEGRACIÓN; Conectar mesero y gestión de personal",
+    "owner": "Samuel Correa",
+    "phase": "integracion",
+    "points": 4,
+    "due": "2026-12-03",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion."
+  },
+  {
+    "jiraKey": "KAN-132",
+    "subtasks": [
+      {
+        "jiraKey": "KAN-127",
+        "title": "Conectar el login de cocina al backend compartido",
+        "owner": "Santiago Evanz",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-132"
+      },
+      {
+        "jiraKey": "KAN-128",
+        "title": "Conectar el login de cajero después de su frontend",
+        "owner": "Santiago Evanz",
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-132"
+      }
+    ],
+    "title": "INTEGRACIÓN; Conectar accesos de cocina y cajero",
+    "owner": "Santiago Evanz",
+    "phase": "integracion",
+    "points": 2,
+    "due": "2026-12-03",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion."
+  },
+  {
+    "jiraKey": "KAN-133",
+    "subtasks": [
+      {
+        "title": "Implementar registro público, login y logout del comensal",
+        "owner": "Oscar Rojasricor",
+        "due": "2026-12-03",
+        "points": 2,
+        "jiraKey": "KAN-118",
+        "estimateInDescription": true,
+        "verifiedStatus": "Tareas por hacer",
+        "jiraUpdated": "2026-11-27",
+        "parent": "KAN-133"
+      }
+    ],
+    "title": "INTEGRACIÓN; Conectar registro y acceso del comensal",
+    "owner": "Oscar Rojas",
+    "phase": "integracion",
+    "points": 1,
+    "due": "2026-12-03",
+    "sprintId": 1,
+    "scheduleUpdated": "2026-11-27",
+    "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion."
   }
 ]

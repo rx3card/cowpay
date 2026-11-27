@@ -1,5 +1,8 @@
 # Mi seguimiento semanal del equipo
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Usamos este documento para las reuniones presenciales y el informe semanal. El trabajo que revisamos está en el [plan del equipo](plan-equipo.md).
 
 Nos reunimos **presencialmente en el SENA**, dentro de la jornada:

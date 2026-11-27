@@ -1,0 +1,1086 @@
+{
+  "date": "2026-11-27",
+  "delivery": "2026-12-07",
+  "sprint": {
+    "id": 1,
+    "end": "2026-12-04",
+    "name": "CowPay; landing, accesos y CRUD; cierre 4 dic"
+  },
+  "sourceMain": "c284ef9f30911fb3496f3f105f640dc08ec51882",
+  "localBranch": "prueba-no-renderizar-navBar",
+  "planningOnly": true,
+  "backendImplemented": false,
+  "completedWithEvidence": [
+    "KAN-25",
+    "KAN-26",
+    "KAN-27",
+    "KAN-29",
+    "KAN-53",
+    "KAN-61"
+  ],
+  "deferred": [
+    "KAN-4",
+    "KAN-5",
+    "KAN-6",
+    "KAN-7",
+    "KAN-8",
+    "KAN-9",
+    "KAN-11",
+    "KAN-12",
+    "KAN-13",
+    "KAN-14",
+    "KAN-15",
+    "KAN-17",
+    "KAN-34",
+    "KAN-35",
+    "KAN-36",
+    "KAN-37",
+    "KAN-38",
+    "KAN-39",
+    "KAN-40",
+    "KAN-41",
+    "KAN-42",
+    "KAN-43",
+    "KAN-44",
+    "KAN-45",
+    "KAN-46",
+    "KAN-47",
+    "KAN-48",
+    "KAN-49",
+    "KAN-50",
+    "KAN-51",
+    "KAN-55",
+    "KAN-56",
+    "KAN-57",
+    "KAN-58",
+    "KAN-59",
+    "KAN-60",
+    "KAN-62",
+    "KAN-63",
+    "KAN-65",
+    "KAN-66",
+    "KAN-67",
+    "KAN-68",
+    "KAN-69",
+    "KAN-73",
+    "KAN-74",
+    "KAN-75",
+    "KAN-16",
+    "KAN-18",
+    "KAN-54",
+    "KAN-71",
+    "KAN-72",
+    "KAN-76",
+    "KAN-77",
+    "KAN-78"
+  ],
+  "tasks": [
+    {
+      "ref": "BE-01",
+      "title": "BACKEND; Base de datos e inicialización de Superadmin",
+      "owner": "Oscar Rojas",
+      "due": "2026-11-30",
+      "points": 5,
+      "goal": "Esta principal registra solo backend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [
+        {
+          "title": "Definir usuarios, restaurantes y permisos; publicar contrato de datos",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-11-30",
+          "points": 2,
+          "work": "Voy a definir yo, Oscar, usuarios, restaurantes y contratos. Roles fijos: SUPERADMIN, ADMIN, MESERO, COCINA, CAJERO y COMENSAL. Admin/personal pertenecen a un restaurante; comensal se registra aparte. El servidor determina rol/restaurante, no el formulario. Documento campos, errores y contratos que mis compañeros consumirán. Solo nuestra cuenta superadmin se inicializa en DB; las otras se crean desde interfaces. Objetivo: 30 nov.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-99",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Preparar conexión, migraciones y ejemplo de variables sin secretos",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-11-30",
+          "points": 2,
+          "work": "Voy a preparar yo, Oscar, conexión de servidor, esquema versionado y migraciones reproducibles. Elegimos versiones compatibles de PostgreSQL/Prisma y dejamos .env.example sin secretos. Cada compañero usa una base de desarrollo aislada. La inicialización solo crea nuestra cuenta superadmin en KAN-101. No instalamos seis backends ni insertamos empleados/admins automáticamente. Objetivo: 30 nov.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-100",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Inicializar únicamente nuestra cuenta de Superadmin",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-11-30",
+          "points": 1,
+          "work": "Voy a preparar yo, Oscar, la inicialización de nuestra cuenta de SUPERADMIN. Es la única cuenta creada directamente durante preparación de DB. El procedimiento no la duplica y utiliza configuración local para credenciales, con hash protegido. No insertamos admins, personal ni comensales. Superadmin crea restaurante/admin mediante su interfaz; admin crea personal mediante la suya; comensal se registra públicamente. Las pruebas siguen ese recorrido. Objetivo: 30 nov.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-101",
+          "status": "Tareas por hacer"
+        }
+      ],
+      "jiraKey": "KAN-94",
+      "status": "Tareas por hacer",
+      "phase": "backend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend.",
+      "previousScope": "Voy a preparar yo, Oscar, la conexión, el modelo de usuarios/restaurantes, migraciones y la inicialización de nuestra cuenta de SUPERADMIN. Es la única cuenta que creamos directamente al preparar la DB. Todas las demás se crean desde las interfaces: superadmin crea admin, admin crea su personal y comensal se registra por su cuenta. No insertamos administradores, empleados ni comensales mediante seed. KAN-99 define datos, KAN-100 conexión/migraciones, KAN-101 bootstrap. Las operaciones comunes están en KAN-121 y autenticación en KAN-95. Objetivo: 30 nov.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía."
+    },
+    {
+      "ref": "AUTH-01",
+      "title": "BACKEND; Autenticación, sesiones, permisos y recuperación",
+      "owner": "Oscar Rojas",
+      "due": "2026-12-02",
+      "points": 9,
+      "goal": "Esta principal registra solo backend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [
+        {
+          "title": "Acordar biblioteca y contrato único para iniciar y cerrar sesión",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-11-30",
+          "points": 1,
+          "work": "Voy a acordar y preparar yo, Oscar, la biblioteca y el contrato compartido de autenticación. Los compañeros reciben funciones y un ejemplo explicado para conectar sus formularios; no se les asigna construir sesiones ni seguridad. Definimos login, logout, usuario actual, errores y comprobación del rol/restaurante en servidor.\n\nSolo inicializamos nuestra cuenta de SUPERADMIN. Admin y personal se crean desde sus interfaces; comensal desde el registro público. Objetivo: 30 de noviembre. Depende de KAN-94. Podemos empezar desde main sin esperar los cambios visuales de layouts.",
+          "jiraKey": "KAN-102",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Implementar login, sesión persistente y cierre de sesión",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-12-01",
+          "points": 3,
+          "work": "Voy a implementar yo, Oscar, el login, las sesiones y el logout comunes como parte de la base. Comprobamos credenciales y estado en servidor, almacenamos contraseñas como hash mediante biblioteca mantenida, y gestionamos sesión y expiración. Los compañeros llaman a estas funciones desde sus interfaces.\n\nLas cuentas administrativas para probar se crean desde la interfaz: superadmin crea admin, admin crea personal. No insertamos esas cuentas mediante seed. Objetivo: 1 de diciembre. Depende de KAN-94 y KAN-102. Cada lectura/escritura conserva su comprobación de permisos.",
+          "jiraKey": "KAN-103",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Aplicar permisos por rol y aislamiento por restaurante",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-12-01",
+          "points": 2,
+          "work": "Voy a preparar yo, Oscar, los permisos de cada lectura/escritura. Superadmin gestiona restaurantes/admins; admin solo personal de su restaurante; personal no crea cuentas; comensal se registra aparte. No confiamos en rol/restauranteId enviados por el cliente. Probamos inactividad, ids ajenos y elevación de privilegios con cuentas creadas desde interfaces. No hay seed de esas cuentas. La separación visual de layouts no bloquea estas funciones de servidor. Objetivo: 1 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-104",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Probar errores, sesión y accesos indebidos con dos restaurantes",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-12-01",
+          "points": 1,
+          "work": "Voy a comprobar yo, Oscar, el servicio compartido antes de que los compañeros lo conecten. Probamos contraseña incorrecta, logout, sesión vencida, usuario inactivo y rol incorrecto. Para aislamiento creamos dos restaurantes y su personal mediante las interfaces correspondientes, partiendo únicamente de nuestra cuenta inicial de superadmin.\n\nNo hay seed de empleados ni administradores. Los compañeros participan en la prueba de su pantalla y registran resultados. Objetivo: 1 de diciembre; el recorrido completo se repite al integrar los CRUD.",
+          "jiraKey": "KAN-105",
+          "status": "Tareas por hacer"
+        },
+        {
+          "title": "Preparar recuperación supervisada del personal y de administradores",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-12-02",
+          "points": 2,
+          "jiraKey": "KAN-119",
+          "work": "Voy a preparar yo, Oscar, la recuperación compartida del backend. El personal solicita restablecimiento al admin de su restaurante; admin lo solicita a superadmin. Ningún mesero puede restablecer claves de compañeros. El servidor comprueba autoridad y restaurante.\n\nRegistramos solicitudes y resolución. Usamos el mecanismo de la biblioteca acordada para enlace o credencial temporal de un uso, vencimiento, cambio de contraseña y revocación de sesiones. No mostramos contraseñas anteriores. Cambiar correo o usuario es una edición separada, no un restablecimiento automático.\n\nPalma y Samuel conectan sus interfaces a esta base en KAN-110 y KAN-114. No programan otra recuperación. Objetivo: 2 de diciembre. Las cuentas de pruebas se crean desde la interfaz después de inicializar solo superadmin.",
+          "status": "Tareas por hacer"
+        }
+      ],
+      "jiraKey": "KAN-95",
+      "status": "Tareas por hacer",
+      "phase": "backend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend.",
+      "previousScope": "Voy a preparar yo, Oscar, la autenticación y autorización comunes como parte de la base del backend. Mis compañeros todavía están aprendiendo; reciben funciones y ejemplos preparados para conectar sus interfaces. Evanz se encarga de las interfaces y conexiones de cocina y caja, no de construir las sesiones ni la seguridad compartida.\n\nFlujo confirmado: inicializamos únicamente nuestra cuenta de SUPERADMIN. Desde la interfaz de superadmin creamos restaurantes y administradores; cada admin crea MESERO, COCINA y CAJERO de su restaurante desde su interfaz. COMENSAL se registra por su cuenta. No insertamos admins, empleados ni comensales mediante un seed.\n\nSubtareas a mi cargo: KAN-102 contrato y biblioteca; KAN-103 login, sesión y logout; KAN-104 permisos por rol y restaurante; KAN-105 pruebas del servicio; KAN-119 recuperación supervisada. Objetivos: contrato 30 nov, login y permisos 1 dic, recuperación 2 dic. Son objetivos ajustados, no una garantía.\n\nEl personal solicita recuperación a su admin; admin solicita a superadmin. Los permisos y cada lectura/escritura se comprueban en servidor. Los compañeros consumen el contrato publicado, no implementan otra autenticación.\n\nPodemos empezar desde main aunque falte separar los menús de los logins: eso afecta al layout y lo corrige cada responsable en su rama. No bloquea modelo, servidor ni pruebas de permisos.\n\nKAN-94 prepara conexión y bootstrap inicial; las cuentas para las pruebas funcionales se crean desde las interfaces. Cerramos con persistencia, sesión, aislamiento entre restaurantes y PR revisado. Integramos el 4 y entregamos el 7. Ver docs/plan-backend-y-entrega.md."
+    },
+    {
+      "ref": "SUP-CRUD-01",
+      "title": "FRONTEND; Pantallas de Superadmin y administrador",
+      "owner": "Santiago Diaz Palma",
+      "due": "2026-12-01",
+      "points": 6,
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [
+        {
+          "jiraKey": "KAN-70",
+          "title": "Construir frontend del login de administrador",
+          "owner": "Santiago Diaz Palma",
+          "work": "Vamos a construir la interfaz de acceso del admin y sus estilos responsive. Responsable: Palma. En main revisada, EntrarPage de admin sigue provisional. Si hay avances en la rama personal los revisamos antes de duplicarlos.\n\nObjetivo de frontend: 1 de diciembre. El login no lleva menú del panel; KAN-126 organiza layouts. KAN-117 conecta admin y superadmin a la autenticación preparada por Oscar. No se le pide a Palma construir sesiones o permisos desde cero. Esta tarea sale del alcance aplazado y se incorpora a KAN-96.",
+          "status": "En curso"
+        },
+        {
+          "title": "Preparar acceso y panel mínimo de Superadmin fuera del layout de acceso",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-01",
+          "points": 1,
+          "work": "Vamos a preparar la interfaz de acceso y panel de Superadmin y conectarla a KAN-95. Palma trabaja la presentación y conexión; Oscar prepara la autenticación y los permisos. Separamos el layout del panel para que no aparezca en login; esta corrección puede hacerse en paralelo al backend. Objetivo: 1 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-106",
+          "status": "Tareas por hacer"
+        },
+        {
+          "jiraKey": "KAN-126",
+          "title": "Separar acceso y panel de admin y superadmin y revisar imports",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-11-30",
+          "work": "Palma realiza la separación de acceso y panel de admin/superadmin desde main en su rama para aprender. Los formularios de acceso no reciben el menú del panel; ajusta imports, conserva las URLs acordadas y comprueba compilación antes de abrir PR. No copia a ciegas la rama local de Oscar con imports rotos. La base de sesiones y permisos la prepara Oscar; esto no bloquea empezar backend. Objetivo: 30 nov.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-96"
+        },
+        {
+          "jiraKey": "KAN-134",
+          "title": "FRONTEND; Maquetar gestión de restaurantes y administradores",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-01",
+          "phase": "frontend",
+          "parent": "KAN-96",
+          "planningStatus": "Por hacer; maquetación sin conexión real"
+        }
+      ],
+      "jiraKey": "KAN-96",
+      "status": "Tareas por hacer",
+      "phase": "frontend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "previousScope": "Palma trabaja las interfaces y conexiones de Superadmin/admin, con fases separadas. Oscar prepara las operaciones del servidor en KAN-94, KAN-95 y KAN-121.\n\nFRONTEND: KAN-70 login admin; KAN-106 login y panel mínimo de Superadmin; formularios/listados/detalles de restaurantes y administradores en KAN-107/KAN-108. En main revisada los accesos de admin y superadmin todavía son provisionales: no los damos por maquetados.\n\nCONEXIÓN: KAN-117 conecta ambos accesos; KAN-107 a KAN-110 conectan alta, consulta/edición, desactivación y recuperación al backend que prepara Oscar. Las interfaces pueden avanzar con el contrato antes del servidor.\n\nSolo se inicializa nuestra cuenta de superadmin. Los administradores se crean desde esta interfaz; no por seed. Cada subtarea muestra su propio estado. Frontend mínimo objetivo 1 dic; altas conectadas 2; CRUD completo 3; integración 4 y entrega 7. No está incluido terminar todo el diseño futuro de Superadmin."
+    },
+    {
+      "ref": "ADM-CRUD-01",
+      "title": "FRONTEND; Login de mesero y pantallas de gestión de personal",
+      "owner": "Samuel Correa",
+      "due": "2026-12-01",
+      "points": 4,
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [
+        {
+          "jiraKey": "KAN-52",
+          "title": "Construir frontend del login de mesero",
+          "owner": "Samuel ",
+          "work": "Vamos a construir el formulario visual del mesero, sus estilos y adaptación móvil/escritorio. Responsable: Samuel. En main revisada el 27, EntrarPage de mesero sigue provisional: título, responsable y párrafo. PR #23 entregó navegación e inicio del panel, no este login. Si hay avances locales los revisamos antes de repetir trabajo.\n\nObjetivo de frontend: 1 de diciembre. Separamos acceso y panel en KAN-125; podemos maquetar mientras Oscar prepara el backend. KAN-115 conecta luego el login/logout al servicio compartido. Conservamos el estado actual de trabajo y pedimos evidencia antes de cerrar. Esta tarea ya no está aplazada: forma parte de la principal KAN-97 de Samuel.",
+          "status": "En curso"
+        },
+        {
+          "title": "Preparar formulario de personal con el contrato compartido",
+          "owner": "Samuel ",
+          "due": "2026-12-01",
+          "points": 2,
+          "work": "Vamos a preparar listado y formulario de personal en el área admin. Samuel utiliza el contrato que entrega Oscar en KAN-121; no tiene que diseñar los permisos o consultas del backend. Admin crea solo MESERO/COCINA/CAJERO de su restaurante. Acordamos archivos con Palma antes de editar PersonalPage. Objetivo: 1 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-111",
+          "status": "Tareas por hacer"
+        },
+        {
+          "jiraKey": "KAN-125",
+          "title": "Separar acceso y panel de mesero y corregir sus imports",
+          "owner": "Samuel ",
+          "due": "2026-11-30",
+          "work": "Samuel realiza la reorganización de mesero desde main en su rama para aprender. El login y recuperación quedan fuera del layout con menú; las páginas del panel conservan el suyo. Ajusta imports después de mover carpetas, comprueba URLs y compilación y abre PR. No necesita implementar autenticación: Oscar prepara KAN-95. Objetivo: 30 nov; se puede trabajar en paralelo al backend.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-97"
+        }
+      ],
+      "jiraKey": "KAN-97",
+      "status": "En curso",
+      "phase": "frontend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "previousScope": "Esta es la tarjeta principal de trabajo pendiente de Samuel Correa. Conservamos el estado actual En curso; Samuel la pasa a En revisión con PR y se finaliza al revisar e integrar.\n\nYA ENTREGADO: panel y navegación del mesero, PR #23, visibles en la tarjeta principal Finalizada KAN-10. No tiene que repetirlos.\n\nFRONTEND PENDIENTE: KAN-52 formulario de login de mesero, todavía provisional en main; KAN-111 formulario/listado de personal en admin, coordinando archivos con Palma. KAN-125 recoge la práctica de separar menú del login en su propia rama. Si tiene avances locales, los revisamos antes de repetir trabajo.\n\nCONEXIÓN POSTERIOR: KAN-115 conecta login/logout de mesero; KAN-112 conecta alta/listado de personal; KAN-113 edición/baja; KAN-114 recuperación. Oscar prepara primero las funciones, sesiones, permisos y operaciones de KAN-94, KAN-95 y KAN-121. Samuel consume esa base con guía, no construye otro backend.\n\nObjetivos: frontend 1 dic, conexión inicial 2, revisión del recorrido 3; integración 4 y entrega 7. Las tareas de pedidos/mesas adicionales se conservan en backlog. Los estados se basan en evidencia, no solo en que exista una ruta."
+    },
+    {
+      "ref": "ACC-01",
+      "title": "FRONTEND; Registro y login del comensal",
+      "owner": "Oscar Rojas",
+      "due": "2026-12-01",
+      "points": 1,
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [],
+      "jiraKey": "KAN-98",
+      "status": "Tareas por hacer",
+      "phase": "frontend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "previousScope": "Voy a conectar yo, Oscar, el registro, login y logout del comensal al backend compartido que preparo en KAN-94, KAN-95 y KAN-121. Comensal se registra por su cuenta y el servidor impone ese rol. Inicializamos únicamente superadmin; los demás usuarios se crean por sus interfaces.\n\nMi subtarea de interfaz es KAN-118. Los accesos de cocina/cajero tienen su propia tarea principal KAN-116, asignada a Evanz. El acceso de mesero KAN-115 está bajo KAN-97, de Samuel; admin/superadmin KAN-117 bajo KAN-96, de Palma. Así cada responsable tiene su tarjeta principal visible y controla su estado en el tablero.\n\nObjetivo: 3 de diciembre. Comprobamos registro por formulario, errores, persistencia, sesión y logout. Cada principal se mueve por separado entre Por hacer, En curso, En revisión y Finalizada con evidencia."
+    },
+    {
+      "ref": "BASE-03",
+      "title": "Corregir layouts de acceso y sus imports en las ramas de cada responsable",
+      "owner": "Oscar Rojasricor",
+      "jiraKey": "KAN-120",
+      "due": null,
+      "points": 1,
+      "subs": [],
+      "goal": "Coordinamos las correcciones de presentación para que los accesos no muestren menú de panel. Samuel las realiza para mesero; Palma para admin/superadmin. Lo hacen ellos para aprender y revisamos sus PR. Yo, Oscar, no necesito terminarles este cambio antes de preparar el backend desde main.\n\nLa rama local prueba-no-renderizar-navBar tiene el commit 6fc320e con reorganización sin integrar y 12 imports no resueltos observados. No la usamos como base compartida hasta revisar. Cada responsable parte de main y sigue el patrón acordado sin copiar imports rotos. No cambiamos de rama automáticamente ni integramos ese commit desde esta planificación. Objetivo: 30 nov, en paralelo al backend. Las sesiones/permisos siguen comprobándose en servidor independientemente del menú.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+      "status": "Tareas por hacer",
+      "sprintId": null,
+      "planningStatus": "Backlog; coordinación anterior sustituida por frontend de cada responsable"
+    },
+    {
+      "ref": "BE-02",
+      "title": "BACKEND; CRUD de restaurantes, administradores y personal",
+      "owner": "Oscar Rojas",
+      "jiraKey": "KAN-121",
+      "due": "2026-12-02",
+      "points": 5,
+      "goal": "Esta principal registra solo backend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "subs": [
+        {
+          "jiraKey": "KAN-122",
+          "title": "Preparar contratos y operaciones de restaurantes y administradores",
+          "owner": "Oscar Rojasricor",
+          "work": "Superadmin puede crear, consultar, editar y desactivar restaurante/admin mediante servicio con autorización. Yo preparo la operación y documento entradas, salidas y errores para que Palma conecte sus formularios. Incluimos consistencia entre restaurante y admin y pruebas de persistencia.\n\nResponsable: Oscar. Objetivo: 2 de diciembre; publicamos el contrato antes para que los compañeros puedan maquetar. Depende de KAN-94/KAN-95. Lo construyo con guía y ejecuto yo los comandos. Dejamos un PR y evidencia antes de integrar.",
+          "due": "2026-12-02",
+          "status": "Tareas por hacer"
+        },
+        {
+          "jiraKey": "KAN-123",
+          "title": "Preparar operaciones de personal aisladas por restaurante",
+          "owner": "Oscar Rojasricor",
+          "work": "Yo preparo alta, consulta, edición y baja de MESERO, COCINA y CAJERO. Restaurante e identidad salen de la sesión del admin; se rechazan ids de otro restaurante y roles no permitidos. Samuel consume estas funciones desde las pantallas de personal.\n\nResponsable: Oscar. Objetivo: 2 de diciembre; publicamos el contrato antes para que los compañeros puedan maquetar. Depende de KAN-94/KAN-95. Lo construyo con guía y ejecuto yo los comandos. Dejamos un PR y evidencia antes de integrar.",
+          "due": "2026-12-02",
+          "status": "Tareas por hacer"
+        },
+        {
+          "jiraKey": "KAN-124",
+          "title": "Preparar registro público de comensal y ejemplo de interfaz conectada",
+          "owner": "Oscar Rojasricor",
+          "work": "Yo preparo registro público con rol COMENSAL impuesto por servidor, y un ejemplo explicado que recorra formulario, servidor, permisos y DB. Solo se inicializa superadmin directamente; las cuentas para pruebas se crean desde las interfaces correspondientes. Explico el contrato y el patrón al equipo antes de pedirles replicarlo.\n\nResponsable: Oscar. Objetivo: 2 de diciembre; publicamos el contrato antes para que los compañeros puedan maquetar. Depende de KAN-94/KAN-95. Lo construyo con guía y ejecuto yo los comandos. Dejamos un PR y evidencia antes de integrar.",
+          "due": "2026-12-02",
+          "status": "Tareas por hacer"
+        }
+      ],
+      "status": "Tareas por hacer",
+      "phase": "backend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es backend.",
+      "previousScope": "Voy a preparar yo, Oscar, las operaciones compartidas del backend antes de pedir a mis compañeros que conecten sus pantallas. Depende del modelo de KAN-94 y de autenticación/permisos de KAN-95. Ellos no tienen que inventar consultas, sesiones ni reglas de autorización.\n\nEntregamos funciones y entradas de servidor para: crear/listar/consultar/editar/desactivar restaurantes y sus admins, crear/listar/consultar/editar/desactivar MESERO/COCINA/CAJERO dentro del restaurante del admin autenticado, registro público que siempre crea COMENSAL, y consumo de recuperación común KAN-119. El servidor comprueba todos los datos, rol y restaurante; las interfaces reciben contratos y errores documentados sin hashes ni secretos.\n\nSolo inicializamos nuestra cuenta de SUPERADMIN. A partir de ella todas las demás cuentas se crean por interfaz: superadmin crea admin y admin crea personal; el comensal se registra aparte. Preparamos juntos un ejemplo conectado desde interfaz a servidor y DB que los compañeros puedan seguir. No se programan aquí sus pantallas finales.\n\nNo necesitamos esperar la separación visual del menú de login para empezar este backend desde main. Cada responsable puede corregir layouts en paralelo. Objetivo: 2 de diciembre, con contrato y primer ejemplo disponibles antes para avanzar la interfaz. La fecha es ajustada y se revisa si base/login no funcionan el 1. Integración el 4 y entrega el 7. Ver docs/plan-backend-y-entrega.md."
+    },
+    {
+      "jiraKey": "KAN-10",
+      "ref": "MESERO",
+      "title": "FRONTEND ENTREGADO; Panel y navegación de mesero; PR #23",
+      "owner": "Samuel Correa",
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "due": null,
+      "subs": [
+        {
+          "jiraKey": "KAN-53",
+          "title": "Maquetar navegación y panel principal del mesero",
+          "owner": "Samuel ",
+          "work": "## Revisión del 27 de noviembre de 2026\n\nLa navegación lateral y el inicio del panel de mesero están integrados. Evidencia: https://github.com/rx3card/cowpay/pull/23. Esto cierra la maqueta del panel; no incluye login real, CRUD ni datos persistentes.\n\nLa nueva etapa incorpora backend y base de datos; la autenticación funcional se seguirá en tareas nuevas para no confundirla con esta maqueta terminada.\n\n## Alcance original conservado como historial\n\nVamos a maquetar navegación y panel principal del mesero.\n\nResponsable: Samuel Correa. Inicio del periodo pendiente: 2026-11-21. Fecha objetivo de la tarea: 2026-11-26. Estimación: 2 puntos.\n\nLas pantallas se desarrollan en src/features/<area>/pages; sus piezas en components y sus CSS Modules en styles del área. Las imágenes van en public/media/<area> y el logo en public/media/compartido. Los accesos son /admin y /superadmin; el área interna se llama superadmin. Usamos pnpm y CSS, sin Tailwind.\n\nNuestro periodo reprogramado empieza el 21 de noviembre de 2026. Es sábado y no es jornada obligatoria. La primera jornada de apoyo presencial es el lunes 23. Trabajamos en el SENA de 13:00 a 18:00 lunes, martes, jueves y viernes; miércoles tenemos inglés. No cuento con trabajo mío fuera del SENA ni fines de semana. Conservamos cierre el 4 de diciembre a las 17:45 y entrega oficial el 7.\n\nDiseño: https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-61.\n\nCada responsable pasa su subtarea a En curso al empezar y a En revisión cuando deja un PR listo, con ruta y capturas. Después de revisar y fusionar, la paso a Hecho. Mis cambios los revisa otro compañero. Las tareas principales se cierran al comprobar todas sus partes. No damos por realizada una reunión sin registro real.\n\nVamos a seguir docs/base-actual.md y docs/trabajo-colaborativo.md del repositorio. Las pantallas muestran su nombre y responsable, sin convertir las notas técnicas en títulos.",
+          "status": "Finalizada"
+        }
+      ],
+      "status": "Finalizada",
+      "points": 2,
+      "phase": "frontend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "previousScope": "Entrega de Samuel Correa comprobada en main: navegación lateral y página de inicio del panel de mesero. Evidencia integrada: https://github.com/rx3card/cowpay/pull/23 (23 de noviembre de 2026). Archivos: src/features/mesero/components/MeseroHeader.tsx y MeseroNav.tsx; src/features/mesero/pages/MeseroInicioPage.tsx y estilos relacionados.\n\nEsta tarjeta principal queda Finalizada para que la instructora vea el avance entregado en el tablero. KAN-53 conserva la subtarea y su evidencia. No estamos afirmando que Samuel haya terminado el login, las mesas o el backend.\n\nSeparamos el alcance anterior: el login pendiente KAN-52 está en la principal KAN-97 de Samuel; el listado/detalle de mesas KAN-54 permanece aplazado bajo KAN-11. No borramos esas tareas ni cambiamos sus estados para aparentar que están terminadas.\n\n## Historial del alcance anterior\n\n## Replanificación del 27 de noviembre de 2026\n\nConservamos esta tarea de maquetación y cualquier avance. Su parte pendiente deja de ser un compromiso independiente del sprint: el trabajo funcional se sigue en KAN-98 para login del mesero; KAN-53 conserva la maqueta integrada. Evitamos exigir dos veces el mismo acceso o CRUD.\n\nEl cambio de alcance prioriza landing, autenticación, base de datos y gestión de usuarios. Las maquetas ya integradas conservan su evidencia y no se confunden con una operación persistente. Retiramos la fecha anterior de esta tarea; consultamos el nuevo plan en docs/plan-backend-y-entrega.md.\n\n## Alcance original conservado como historial\n\nVamos a trabajar en: construir acceso, panel y listado de mesas.\n\nResponsable: Samuel Correa. Inicio del periodo pendiente: 2026-11-21. Fecha objetivo: 2026-11-26. Estimación: 5 puntos; no son horas.\n\nLas pantallas se desarrollan en src/features/<area>/pages; sus piezas en components y sus CSS Modules en styles del área. Las imágenes van en public/media/<area> y el logo en public/media/compartido. Los accesos son /admin y /superadmin; el área interna se llama superadmin. Usamos pnpm y CSS, sin Tailwind.\n\nNuestro periodo reprogramado empieza el 21 de noviembre de 2026. Es sábado y no es jornada obligatoria. La primera jornada de apoyo presencial es el lunes 23. Trabajamos en el SENA de 13:00 a 18:00 lunes, martes, jueves y viernes; miércoles tenemos inglés. No cuento con trabajo mío fuera del SENA ni fines de semana. Conservamos cierre el 4 de diciembre a las 17:45 y entrega oficial el 7.\n\nDiseño de referencia: https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=323-61.\n\nSubtareas:\n\n* KAN-52: Maquetar acceso del mesero y variante de error si existe en Figma (1 puntos).\n* KAN-53: Maquetar navegación y panel principal del mesero (2 puntos).\n* KAN-54: Maquetar listado y detalle de mesas con enlaces y CSS responsive (2 puntos).\n\nCada responsable pasa su subtarea a En curso al empezar y a En revisión cuando deja un PR listo, con ruta y capturas. Después de revisar y fusionar, la paso a Hecho. Mis cambios los revisa otro compañero. Las tareas principales se cierran al comprobar todas sus partes. No damos por realizada una reunión sin registro real.\n\nDocumentación: https://github.com/rx3card/cowpay ; README.md, docs/base-actual.md y docs/plan-equipo.md. La base actual todavía necesita su PR para quedar compartida en main.\n\nVamos a desarrollar las pantallas de Figma por partes, con datos de ejemplo y navegación. La página provisional solo identifica dónde trabajamos. No añadimos validaciones ni backend a esta entrega."
+    },
+    {
+      "jiraKey": "KAN-116",
+      "ref": "COC-CAJ",
+      "title": "FRONTEND; Accesos de cocina y cajero",
+      "owner": "Santiago Evanz",
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente.",
+      "due": "2026-12-01",
+      "subs": [
+        {
+          "jiraKey": "KAN-61",
+          "title": "Maquetar acceso y estructura visual de cocina",
+          "owner": "Santiago Evanz",
+          "work": "## Revisión del 27 de noviembre de 2026\n\nEl acceso y la estructura visual de cocina están integrados. Evidencia: https://github.com/rx3card/cowpay/pull/21. La revisión previa comprobó compilación y rutas. Esto cierra la maqueta; no incluye autenticación real ni tarjetas de pedidos.\n\nLa nueva etapa incorpora backend y base de datos; la autenticación funcional se seguirá en tareas nuevas para no confundirla con esta maqueta terminada.\n\n## Alcance original conservado como historial\n\nVamos a maquetar acceso y estructura visual de cocina.\n\nResponsable: Santiago Evanz. Inicio del periodo pendiente: 2026-11-21. Fecha objetivo de la tarea: 2026-11-27. Estimación: 1 puntos.\n\nLas pantallas se desarrollan en src/features/<area>/pages; sus piezas en components y sus CSS Modules en styles del área. Las imágenes van en public/media/<area> y el logo en public/media/compartido. Los accesos son /admin y /superadmin; el área interna se llama superadmin. Usamos pnpm y CSS, sin Tailwind.\n\nNuestro periodo reprogramado empieza el 21 de noviembre de 2026. Es sábado y no es jornada obligatoria. La primera jornada de apoyo presencial es el lunes 23. Trabajamos en el SENA de 13:00 a 18:00 lunes, martes, jueves y viernes; miércoles tenemos inglés. No cuento con trabajo mío fuera del SENA ni fines de semana. Conservamos cierre el 4 de diciembre a las 17:45 y entrega oficial el 7.\n\nDiseño: https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=321-4098.\n\nCada responsable pasa su subtarea a En curso al empezar y a En revisión cuando deja un PR listo, con ruta y capturas. Después de revisar y fusionar, la paso a Hecho. Mis cambios los revisa otro compañero. Las tareas principales se cierran al comprobar todas sus partes. No damos por realizada una reunión sin registro real.\n\nVamos a seguir docs/base-actual.md y docs/trabajo-colaborativo.md del repositorio. Las pantallas muestran su nombre y responsable, sin convertir las notas técnicas en títulos.",
+          "status": "Finalizada"
+        },
+        {
+          "jiraKey": "KAN-64",
+          "title": "Construir frontend del login de cajero",
+          "owner": "Santiago Evanz",
+          "work": "Vamos a construir el formulario visual del cajero con sus estilos, iconos, etiquetas y adaptación a móvil/escritorio. Responsable: Santiago Evanz.\n\nEn main revisada el 27 de noviembre, src/features/caja/pages/EntrarPage.tsx tiene solo el título, el responsable y un párrafo. El acceso de cocina sí fue integrado en PR #21; ese avance no demuestra que el de cajero esté hecho. Antes de empezar preguntamos a Evanz por cambios locales y revisamos cualquier PR para no repetirlos.\n\nLa interfaz se puede preparar antes de que esté listo el backend. No muestra el menú del panel. Objetivo de frontend: 1 de diciembre. La conexión al servidor tiene otra subtarea bajo KAN-116.\n\nRescatamos esta tarea del backlog para el alcance actual. Su alcance anterior mezclaba acceso con apertura de caja; la apertura y el resto de cuentas/cobros permanecen aplazados en KAN-14.",
+          "status": "Tareas por hacer"
+        }
+      ],
+      "status": "Tareas por hacer",
+      "points": 3,
+      "phase": "frontend",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "previousScope": "Vamos a trabajar por fases visibles dentro de esta tarjeta principal de Evanz.\n\n1. FRONTEND HECHO: KAN-61, login y estructura visual de cocina, integrados en PR #21: https://github.com/rx3card/cowpay/pull/21. No lo volvemos a construir.\n2. FRONTEND PENDIENTE: KAN-64, login del cajero. En main revisada solo contiene título, responsable y texto provisional; no encontramos una PR que entregue el formulario. Si Evanz tiene trabajo local lo revisamos e integramos antes de pedirle repetirlo.\n3. CONEXIÓN: después de que Oscar entregue KAN-95 y KAN-121, conectamos ambos formularios al mismo servicio y probamos sesión, errores, logout y recuperación supervisada. Evanz no construye las sesiones ni permisos del servidor.\n\nLas cuentas las crea el admin desde la interfaz, partiendo de nuestra cuenta inicial de superadmin. Las correcciones visuales de layouts pueden avanzar en paralelo al backend.\n\nCada subtarea tiene su propio estado. Esta principal puede pasar a En curso cuando Evanz empiece su parte pendiente; no la pasamos a Finalizada porque cocina ya tenga una maqueta. Objetivos: frontend 1 dic, conexión 2 dic, revisión 3 dic; integración 4 y entrega 7. El detalle de cobros, apertura y cierre de caja sigue aplazado, no se borró."
+    },
+    {
+      "jiraKey": "KAN-3",
+      "subs": [],
+      "title": "FRONTEND; Terminar landing, footer y navegación pública",
+      "owner": "Jhean Useche",
+      "phase": "frontend",
+      "points": 5,
+      "due": "2026-12-03",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es frontend.",
+      "goal": "Esta principal registra solo frontend. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente."
+    },
+    {
+      "jiraKey": "KAN-130",
+      "subs": [
+        {
+          "title": "Conectar formulario de restaurante y admin a la base compartida",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-02",
+          "points": 2,
+          "work": "Vamos a preparar el formulario de alta de restaurante/admin y conectarlo a las operaciones de KAN-121 que prepara Oscar. Palma muestra datos, envío, resultado y errores según contrato; no implementa la transacción ni autorización común desde cero. La cuenta resultante se crea por esta interfaz y puede iniciar sesión. Objetivo: 2 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-107",
+          "status": "Tareas por hacer",
+          "parent": "KAN-130"
+        },
+        {
+          "title": "Listar, consultar y editar restaurantes y administradores",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-03",
+          "points": 2,
+          "work": "Vamos a preparar listado, detalle y edición de restaurantes/admins desde la interfaz de Superadmin. Palma consume las operaciones de servidor que prepara Oscar en KAN-121, con contratos y errores documentados. Comprobamos que los cambios persisten al recargar y que no exponemos hashes. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-108",
+          "status": "Tareas por hacer",
+          "parent": "KAN-130"
+        },
+        {
+          "title": "Desactivar cuentas y restaurantes y comprobar sus accesos",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-03",
+          "points": 1,
+          "work": "Vamos a conectar los controles de baja lógica de restaurante/admin a KAN-121. Palma prepara confirmación y resultado en la interfaz; Oscar prepara en servidor la desactivación y su efecto sobre los permisos/sesiones. Conservamos registros y comprobamos juntos el acceso después de la baja. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-109",
+          "status": "Tareas por hacer",
+          "parent": "KAN-130"
+        },
+        {
+          "title": "Restablecer acceso del administrador y demostrar el recorrido completo",
+          "owner": "Santiago Diaz Palma",
+          "due": "2026-12-03",
+          "points": 2,
+          "work": "Vamos a conectar la interfaz de recuperación del admin a KAN-119, implementado por Oscar. Palma prepara solicitud/resolución y estados de la interfaz de Superadmin. Superadmin atiende a admin; no consulta contraseñas anteriores. Probamos el mecanismo temporal acordado y revocación de sesiones. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-110",
+          "status": "Tareas por hacer",
+          "parent": "KAN-130"
+        },
+        {
+          "jiraKey": "KAN-117",
+          "title": "Conectar acceso de admin y Superadmin sin duplicar autenticación",
+          "owner": "Santiago Diaz Palma",
+          "work": "Vamos a conectar los formularios de admin/superadmin a las funciones de KAN-95, preparadas por Oscar. Palma se encarga de interfaz, mensajes y separación visual de layouts; no implementa otra autenticación. Admin se crea desde la interfaz de superadmin, partiendo de nuestra única cuenta inicial. Objetivo: 2 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-130"
+        }
+      ],
+      "title": "INTEGRACIÓN; Conectar interfaces de Superadmin y admin",
+      "owner": "Santiago Diaz Palma",
+      "phase": "integracion",
+      "points": 3,
+      "due": "2026-12-03",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion.",
+      "goal": "Esta principal registra solo integracion. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente."
+    },
+    {
+      "jiraKey": "KAN-131",
+      "subs": [
+        {
+          "title": "Conectar alta, listado y detalle de personal al servidor",
+          "owner": "Samuel ",
+          "due": "2026-12-02",
+          "points": 2,
+          "work": "Vamos a conectar los formularios y tablas de personal a las operaciones compartidas preparadas por Oscar en KAN-121. Samuel trabaja interfaz, llamadas según contrato y mensajes de error. No escribe otra conexión de DB ni decide el restaurante desde el cliente. Probamos desde la interfaz la creación de empleados y su acceso posterior. Objetivo: 2 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-112",
+          "status": "Tareas por hacer",
+          "parent": "KAN-131"
+        },
+        {
+          "title": "Editar datos y desactivar personal sin cruzar restaurantes",
+          "owner": "Samuel ",
+          "due": "2026-12-03",
+          "points": 2,
+          "work": "Vamos a conectar edición y baja de personal a KAN-121. Samuel prepara la interfaz y consume el servicio de Oscar. El servidor aplica rol y restaurante; la pantalla muestra el resultado o denegación. Probamos recarga, cuenta inactiva e intento de modificar personal ajeno. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-113",
+          "status": "Tareas por hacer",
+          "parent": "KAN-131"
+        },
+        {
+          "title": "Atender solicitudes de recuperación y verificar el CRUD completo",
+          "owner": "Samuel ",
+          "due": "2026-12-03",
+          "points": 1,
+          "work": "Vamos a conectar la recuperación del personal a KAN-119, preparado por Oscar. Samuel prepara la interfaz para que el admin atienda a su personal, sin construir una segunda recuperación. Mesero no restablece a compañeros. Probamos el recorrido y los permisos con las cuentas creadas desde las interfaces. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-114",
+          "status": "Tareas por hacer",
+          "parent": "KAN-131"
+        },
+        {
+          "jiraKey": "KAN-115",
+          "title": "Conectar login de mesero y cierre de sesión del panel",
+          "owner": "Samuel ",
+          "work": "Vamos a conectar la interfaz de login/logout de mesero a KAN-95. Samuel consume las funciones que prepara Oscar y muestra errores según el contrato. No implementa sesiones ni criptografía. Admin crea la cuenta de mesero desde su interfaz. Samuel corrige por su cuenta el layout para aprender a separar acceso/panel. Objetivo: 2 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-131"
+        }
+      ],
+      "title": "INTEGRACIÓN; Conectar mesero y gestión de personal",
+      "owner": "Samuel Correa",
+      "phase": "integracion",
+      "points": 4,
+      "due": "2026-12-03",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion.",
+      "goal": "Esta principal registra solo integracion. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente."
+    },
+    {
+      "jiraKey": "KAN-132",
+      "subs": [
+        {
+          "jiraKey": "KAN-127",
+          "title": "Conectar el login de cocina al backend compartido",
+          "owner": "Santiago Evanz",
+          "work": "La maqueta de cocina ya está entregada en KAN-61 y PR #21. Evanz la reutiliza y conecta login/logout y mensajes al contrato preparado por Oscar en KAN-95/KAN-121. No vuelve a maquetar ni programa sesiones desde cero. La cuenta de cocina la crea el admin por interfaz. Comprobamos credenciales incorrectas, sesión, cierre y recuperación supervisada. Objetivo: 2 de diciembre; depende de la base de Oscar.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-132"
+        },
+        {
+          "jiraKey": "KAN-128",
+          "title": "Conectar el login de cajero después de su frontend",
+          "owner": "Santiago Evanz",
+          "work": "Evanz conecta el formulario de KAN-64 a KAN-95/KAN-121, preparados por Oscar. La parte visual del cajero se sigue por separado en KAN-64; en main revisada era provisional, por lo que revisamos posibles avances locales antes de repetirla. Probamos login, errores, logout y acceso de la cuenta creada por el admin desde interfaz. Objetivo: 2 de diciembre.",
+          "status": "Tareas por hacer",
+          "parent": "KAN-132"
+        }
+      ],
+      "title": "INTEGRACIÓN; Conectar accesos de cocina y cajero",
+      "owner": "Santiago Evanz",
+      "phase": "integracion",
+      "points": 2,
+      "due": "2026-12-03",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion.",
+      "goal": "Esta principal registra solo integracion. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente."
+    },
+    {
+      "jiraKey": "KAN-133",
+      "subs": [
+        {
+          "title": "Implementar registro público, login y logout del comensal",
+          "owner": "Oscar Rojasricor",
+          "due": "2026-12-03",
+          "points": 2,
+          "work": "Voy a conectar yo, Oscar, /registro y /login del comensal al backend común de KAN-95/KAN-121. El registro público crea siempre COMENSAL y no lo convierte en empleado. Probamos alta por formulario, datos duplicados, errores, sesión y logout. No se inserta comensal por seed. Objetivo: 3 dic.\n\nAcuerdo corregido del 27 de noviembre: yo preparo las bases compartidas; mis compañeros conectan sus interfaces con guía. Solo inicializamos superadmin; las demás cuentas se crean desde las interfaces. Ver docs/plan-backend-y-entrega.md. Integramos el 4 y entregamos el 7; las fechas son objetivos ajustados, no una garantía.",
+          "jiraKey": "KAN-118",
+          "status": "Tareas por hacer",
+          "parent": "KAN-133"
+        }
+      ],
+      "title": "INTEGRACIÓN; Conectar registro y acceso del comensal",
+      "owner": "Oscar Rojas",
+      "phase": "integracion",
+      "points": 1,
+      "due": "2026-12-03",
+      "sprintId": 1,
+      "scheduleUpdated": "2026-11-27",
+      "scope": "Frontend, backend e integración se controlan en principales separadas. La fase de esta tarjeta es integracion.",
+      "goal": "Esta principal registra solo integracion. El resto se controla en las otras principales identificadas en phaseCards. Consultamos docs/plan-backend-y-entrega.md para el alcance vigente."
+    }
+  ],
+  "dependencies": [
+    {
+      "a": "KAN-94",
+      "b": "KAN-95",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-96",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-97",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-98",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-96",
+      "b": "KAN-98",
+      "type": "Relates",
+      "error": false
+    },
+    {
+      "a": "KAN-97",
+      "b": "KAN-98",
+      "type": "Relates",
+      "error": false
+    },
+    {
+      "a": "KAN-96",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-97",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-98",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-3",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-19",
+      "b": "KAN-24",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-20",
+      "b": "KAN-24",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-120",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-94",
+      "b": "KAN-121",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-121",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-96",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-97",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-98",
+      "type": "Blocks",
+      "error": false,
+      "pendingRemoval": true
+    },
+    {
+      "a": "KAN-96",
+      "b": "KAN-130",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-130",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-130",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-130",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-97",
+      "b": "KAN-131",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-131",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-131",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-131",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-116",
+      "b": "KAN-132",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-132",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-132",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-132",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-98",
+      "b": "KAN-133",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-95",
+      "b": "KAN-133",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-121",
+      "b": "KAN-133",
+      "type": "Blocks",
+      "error": false
+    },
+    {
+      "a": "KAN-133",
+      "b": "KAN-19",
+      "type": "Blocks",
+      "error": false
+    }
+  ],
+  "updates": {
+    "KAN-3": [
+      "PUB-01; Terminar landing, footer y enlaces de entrada",
+      "Vamos a terminar la landing a partir del contenido integrado en PR #24, #25 y #26. Header y varias secciones ya existen; el footer sigue provisional y los botones del hero todavía no tienen navegación. Completamos el contenido mínimo y conectamos Crear cuenta a /registro e Iniciar sesión a /login. Revisamos móvil, tableta y escritorio. Las páginas informativas adicionales y el directorio completo pasan al backlog; no los declaramos terminados. KAN-31 conserva el avance integrado; KAN-32 y KAN-33 siguen con lo pendiente. No implementamos pagos ni solicitudes comerciales reales en esta tarea.",
+      "2026-12-03"
+    ],
+    "KAN-19": [
+      "INT-01; Integrar landing, accesos y CRUD con datos reales",
+      "Voy a coordinar la integración de KAN-3 y KAN-94 a KAN-98. Recorremos: superadmin crea restaurante y admin; admin crea personal; cada rol inicia sesión; comensal se registra por su cuenta. Editamos y desactivamos cuentas, comprobamos persistencia después de recargar y restablecimiento por la autoridad correcta. Revisamos los PR con los cinco compañeros y registramos qué quedó fuera del alcance. Las maquetas de pedidos/pagos no son un bloqueo de esta entrega. El cambio local de layouts está en prueba-no-renderizar-navBar, commit 6fc320e; requiere PR y revisión, no lo damos por integrado.",
+      "2026-12-04"
+    ],
+    "KAN-20": [
+      "INT-02; Probar sesiones, permisos, aislamiento y entrega reproducible",
+      "Voy a coordinar las pruebas del servidor y los accesos. Comprobamos con dos restaurantes que admin A no ve ni modifica personal B, que registro público no crea admins, que una cuenta inactiva no conserva acceso, que logout invalida la sesión y que recuperación solo la atiende la autoridad correcta. Comprobamos denegación en la operación de servidor, no solo ocultación de enlaces. Probamos instalación limpia, migraciones, seed, compilación y móvil/escritorio. Noindex se conserva como preferencia de indexación; no sustituye permisos.",
+      "2026-12-04"
+    ],
+    "KAN-24": [
+      "ENT-01; Preparar demostración de landing, accesos y CRUD para el 7 de diciembre",
+      "Voy a coordinar la entrega del 7 de diciembre. Ensayamos el 3 con datos de prueba; el 4 dejamos la versión integrada, evidencias de persistencia, permisos y recuperación supervisada, instrucciones de instalación y pendientes. Mostramos CRUD de restaurantes/admin en superadmin, personal de admin, login por rol y registro independiente del comensal, además de landing. No presentamos el diseño completo de CowPay como terminado. La hora oficial de entrega queda por confirmar con la instructora.",
+      "2026-12-07"
+    ],
+    "KAN-79": [
+      "INT-01.1; Revisar e integrar PR de base, autenticación y módulos de cuentas",
+      "Voy a revisar los PR vinculados a KAN-94 a KAN-98 y KAN-3. Comprobamos cambios compartidos, contratos, evidencia y compatibilidad con main; los demás revisan mis propios PR. Anotamos quién revisó y el enlace integrado. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-80": [
+      "INT-01.2; Probar el recorrido de alta y acceso de los seis roles",
+      "Voy a recorrer con el equipo superadmin, admin, mesero, cocina, cajero y comensal. Creamos restaurante y admin, luego personal; probamos cada acceso y el registro público independiente, edición y bajas. La recarga conserva datos de la base. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-81": [
+      "INT-01.3; Corregir integración y documentar funciones aplazadas",
+      "Voy a coordinar correcciones de contratos, rutas y errores de integración de la entrega mínima. Documentamos qué funciona y qué sigue provisional sin borrar pantallas ni tareas antiguas. Actualizamos README, variables de ejemplo y pasos reproducibles. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-82": [
+      "INT-02.1; Probar permisos y separación de datos entre restaurantes",
+      "Voy a comprobar operaciones de servidor con rol incorrecto, sin sesión e identificadores ajenos. Admin A no consulta ni modifica personal B; registro público no puede asignarse ADMIN o SUPERADMIN. No basta que los menús estén ocultos. Guardamos casos y resultados. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-83": [
+      "INT-02.2; Probar logout, desactivación y recuperación supervisada",
+      "Voy a comprobar que cerrar sesión o desactivar la cuenta impide seguir operando. El personal solicita a su admin; admin solicita a superadmin. La credencial temporal o enlace acordado vence y solo se usa una vez. No publicamos contraseñas ni tokens como evidencia. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-84": [
+      "INT-02.3; Verificar instalación, migraciones, seed y compilación",
+      "Inicializamos solo superadmin; el resto de cuentas se crea desde las interfaces al comprobar instalación y recorrido.",
+      "2026-12-04"
+    ],
+    "KAN-87": [
+      "REV-02.1; Revisar evidencias y acordar el cambio de alcance a backend",
+      "Voy a revisar el 27 de noviembre las evidencias reales de PR y Jira y explicar por qué priorizamos landing, base de datos, accesos y CRUD. Comprobamos el reparto nuevo KAN-94 a KAN-98 y los bloqueos. La revisión técnica de este chat no acredita que ya se haya celebrado la reunión presencial.",
+      "2026-11-27"
+    ],
+    "KAN-88": [
+      "REV-02.2; Registrar el avance real, cambio de alcance y riesgos para la instructora",
+      "Voy a preparar el informe del 27 con PR integradas, tareas pendientes y la replanificación. Explicamos que backend y base aún no están implementados; base el 30, login común el 1, CRUD/accesos el 3 e integración el 4 son objetivos ajustados. Registramos asistentes y acuerdos solo si la reunión ocurre. No enviamos el informe automáticamente.",
+      "2026-11-27"
+    ],
+    "KAN-89": [
+      "REV-03.1; Revisar la entrega mínima integrada y los pendientes el 4",
+      "Voy a revisar con el equipo landing, accesos y CRUD conectados a la base, casos de permisos y pruebas de instalación. Comparamos alcance acordado y evidencia, y dejamos pendientes de diseño en backlog. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-90": [
+      "REV-03.2; Preparar acta e informe de cierre con evidencias del backend",
+      "Voy a preparar el informe con PR, demostración del CRUD persistente y autenticación, pruebas y limitaciones. Registramos la reunión solo si ocurre y anotamos participantes reales. No confundimos plantilla preparada con acta celebrada. Objetivo: 4 de diciembre.",
+      "2026-12-04"
+    ],
+    "KAN-91": [
+      "ENT-01.1; Ensayar el 3 la landing, altas, accesos y recuperación",
+      "Voy a coordinar el ensayo del 3 de diciembre de 17:00 a 17:30 en el SENA. Participamos los cinco y demostramos el recorrido con cuentas de desarrollo, persistencia y permisos. Si hay bloqueos los anotamos y acordamos correcciones para el 4. No damos por celebrado el ensayo antes de hacerlo.",
+      "2026-12-03"
+    ],
+    "KAN-92": [
+      "ENT-01.2; Corregir integración y preparar evidencia final el 4",
+      "Voy a coordinar errores de integración, permisos y presentación el 4 dentro de la jornada. Dejamos main revisada, instrucciones de base y arranque, datos de demostración y evidencias sin secretos. No dejamos trabajo obligatorio para el fin de semana.",
+      "2026-12-04"
+    ],
+    "KAN-93": [
+      "ENT-01.3; Entregar el 7 landing, accesos y CRUD con base de datos",
+      "Voy a presentar la versión integrada y el recorrido de superadmin a admin y personal, además del registro independiente del comensal. Mostramos persistencia, permisos y recuperación supervisada y dejamos claro qué diseño se aplazó. La entrega es el 7 de diciembre; hora por confirmar con la instructora.",
+      "2026-12-07"
+    ]
+  },
+  "evidence": {
+    "KAN-25": "La instalación está integrada en main: package.json contiene Next.js, React, TypeScript y pnpm. Evidencia: https://github.com/rx3card/cowpay/pull/17.",
+    "KAN-26": "Las rutas y pantallas base están integradas en main. Evidencia: https://github.com/rx3card/cowpay/pull/18. Las reorganizaciones de layouts posteriores se revisan por separado.",
+    "KAN-27": "La base tuvo compilación y revisión antes de integrarse en los PR #17 y #18. No estamos afirmando que el nuevo backend esté compilado: todavía no existe. Evidencia: https://github.com/rx3card/cowpay/pull/18.",
+    "KAN-29": "Las carpetas pages, components y styles por área y public/media están integradas en main. Evidencia: https://github.com/rx3card/cowpay/pull/18.",
+    "KAN-53": "La navegación lateral y el inicio del panel de mesero están integrados. Evidencia: https://github.com/rx3card/cowpay/pull/23. Esto cierra la maqueta del panel; no incluye login real, CRUD ni datos persistentes.",
+    "KAN-61": "El acceso y la estructura visual de cocina están integrados. Evidencia: https://github.com/rx3card/cowpay/pull/21. La revisión previa comprobó compilación y rutas. Esto cierra la maqueta; no incluye autenticación real ni tarjetas de pedidos.",
+    "KAN-10": "Panel y navegación de mesero entregados en PR #23; tarjeta principal Finalizada. No incluye login, mesas ni backend."
+  },
+  "correction": "Oscar prepara todas las bases compartidas; solo se inicializa SUPERADMIN. Las demás cuentas se crean desde interfaces.",
+  "sharedBackendOwner": "Oscar Rojas",
+  "onlyBootstrapAccount": "SUPERADMIN",
+  "visibleOwnerCards": {
+    "Samuel": [
+      "KAN-10",
+      "KAN-97"
+    ],
+    "Evanz": [
+      "KAN-116"
+    ],
+    "Palma": [
+      "KAN-96"
+    ],
+    "Useche": [
+      "KAN-3"
+    ],
+    "Oscar": [
+      "KAN-94",
+      "KAN-95",
+      "KAN-98",
+      "KAN-121"
+    ]
+  },
+  "phaseCards": [
+    {
+      "key": "KAN-94",
+      "title": "BACKEND; Base de datos e inicialización de Superadmin",
+      "owner": "Oscar Rojas",
+      "phase": "backend",
+      "points": 5,
+      "due": "2026-11-30"
+    },
+    {
+      "key": "KAN-95",
+      "title": "BACKEND; Autenticación, sesiones, permisos y recuperación",
+      "owner": "Oscar Rojas",
+      "phase": "backend",
+      "points": 9,
+      "due": "2026-12-02"
+    },
+    {
+      "key": "KAN-121",
+      "title": "BACKEND; CRUD de restaurantes, administradores y personal",
+      "owner": "Oscar Rojas",
+      "phase": "backend",
+      "points": 5,
+      "due": "2026-12-02"
+    },
+    {
+      "key": "KAN-96",
+      "title": "FRONTEND; Pantallas de Superadmin y administrador",
+      "owner": "Santiago Diaz Palma",
+      "phase": "frontend",
+      "points": 6,
+      "due": "2026-12-01"
+    },
+    {
+      "key": "KAN-97",
+      "title": "FRONTEND; Login de mesero y pantallas de gestión de personal",
+      "owner": "Samuel Correa",
+      "phase": "frontend",
+      "points": 4,
+      "due": "2026-12-01"
+    },
+    {
+      "key": "KAN-116",
+      "title": "FRONTEND; Accesos de cocina y cajero",
+      "owner": "Santiago Evanz",
+      "phase": "frontend",
+      "points": 3,
+      "due": "2026-12-01"
+    },
+    {
+      "key": "KAN-98",
+      "title": "FRONTEND; Registro y login del comensal",
+      "owner": "Oscar Rojas",
+      "phase": "frontend",
+      "points": 1,
+      "due": "2026-12-01"
+    },
+    {
+      "key": "KAN-3",
+      "title": "FRONTEND; Terminar landing, footer y navegación pública",
+      "owner": "Jhean Useche",
+      "phase": "frontend",
+      "points": 5,
+      "due": "2026-12-03"
+    },
+    {
+      "key": "KAN-10",
+      "title": "FRONTEND ENTREGADO; Panel y navegación de mesero; PR #23",
+      "owner": "Samuel Correa",
+      "phase": "frontend",
+      "points": 2,
+      "due": null
+    },
+    {
+      "key": "KAN-130",
+      "title": "INTEGRACIÓN; Conectar interfaces de Superadmin y admin",
+      "owner": "Santiago Diaz Palma",
+      "phase": "integracion",
+      "points": 3,
+      "due": "2026-12-03",
+      "subtasks": [
+        "KAN-107",
+        "KAN-108",
+        "KAN-109",
+        "KAN-110",
+        "KAN-117"
+      ],
+      "frontend": "KAN-96"
+    },
+    {
+      "key": "KAN-131",
+      "title": "INTEGRACIÓN; Conectar mesero y gestión de personal",
+      "owner": "Samuel Correa",
+      "phase": "integracion",
+      "points": 4,
+      "due": "2026-12-03",
+      "subtasks": [
+        "KAN-112",
+        "KAN-113",
+        "KAN-114",
+        "KAN-115"
+      ],
+      "frontend": "KAN-97"
+    },
+    {
+      "key": "KAN-132",
+      "title": "INTEGRACIÓN; Conectar accesos de cocina y cajero",
+      "owner": "Santiago Evanz",
+      "phase": "integracion",
+      "points": 2,
+      "due": "2026-12-03",
+      "subtasks": [
+        "KAN-127",
+        "KAN-128"
+      ],
+      "frontend": "KAN-116"
+    },
+    {
+      "key": "KAN-133",
+      "title": "INTEGRACIÓN; Conectar registro y acceso del comensal",
+      "owner": "Oscar Rojas",
+      "phase": "integracion",
+      "points": 1,
+      "due": "2026-12-03",
+      "subtasks": [
+        "KAN-118"
+      ],
+      "frontend": "KAN-98"
+    }
+  ],
+  "pendingLinkCleanup": [
+    {
+      "from": "KAN-95",
+      "to": "KAN-96"
+    },
+    {
+      "from": "KAN-95",
+      "to": "KAN-97"
+    },
+    {
+      "from": "KAN-95",
+      "to": "KAN-98"
+    },
+    {
+      "from": "KAN-95",
+      "to": "KAN-116"
+    },
+    {
+      "from": "KAN-121",
+      "to": "KAN-96"
+    },
+    {
+      "from": "KAN-121",
+      "to": "KAN-97"
+    },
+    {
+      "from": "KAN-121",
+      "to": "KAN-98"
+    },
+    {
+      "from": "KAN-121",
+      "to": "KAN-116"
+    },
+    {
+      "from": "KAN-120",
+      "to": "KAN-19"
+    }
+  ],
+  "pendingLinkCleanupReason": "Las tarjetas y sus nuevas dependencias ya se aplicaron. Falta quitar vínculos antiguos: Atlassian dejó de estar disponible y el control de navegador está deshabilitado. No se eliminaron esos vínculos."
+}

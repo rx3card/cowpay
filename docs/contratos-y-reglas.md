@@ -1,5 +1,8 @@
 # Cómo dejamos el frontend preparado para conectar datos después
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Consultamos estos acuerdos después de aprender componentes y datos en la [guía teórica y práctica](guia-desde-cero.md). No es una tarea de backend para esta entrega.
 
 ## Lo que estamos haciendo ahora

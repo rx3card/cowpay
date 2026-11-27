@@ -1,5 +1,8 @@
 # La base de Cowpay y cómo empezamos nuestra parte
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Estado revisado el 20 de noviembre de 2026.
 
 Ya tenemos la estructura para trabajar. Hay 77 rutas P0/P1, pantallas provisionales con responsable, layouts por área y CSS Modules organizados en `styles`. La compilación y TypeScript pasaron. También comprobamos las 77 direcciones con identificadores de ejemplo antes de renombrar las rutas administrativas; después de los cambios de nombres la compilación volvió a pasar.

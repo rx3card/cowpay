@@ -1,5 +1,8 @@
 # Mapa de rutas y reparto del frontend
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Después de practicar nuestra primera pantalla, consultamos aquí las direcciones y el reparto. La explicación paso a paso está en la [guía teórica y práctica](guia-desde-cero.md).
 
 Estado al 20 de noviembre: las 77 rutas P0/P1 están creadas como pantallas provisionales; cada responsable desarrolla su interfaz. Las 8 rutas P2 permanecen documentadas fuera del compromiso inicial. Un nombre de ruta propuesto no demuestra que su diseño esté terminado en Figma.

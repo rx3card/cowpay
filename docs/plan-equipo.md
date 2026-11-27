@@ -1,5 +1,8 @@
 # Nuestro plan de frontend y tareas de Jira
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Aquí encontramos nuestro reparto, tareas y subtareas. Para empezar desde la instalación seguimos primero el README; para aprender a programar una pantalla usamos la [guía teórica y práctica](guia-desde-cero.md).
 
 ## Qué vamos a entregar

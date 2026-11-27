@@ -2,7 +2,9 @@
 
 Proyecto de etapa lectiva del SENA.
 
-Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1). Esta es nuestra puerta de entrada: primero entendemos qué vamos a hacer, instalamos las herramientas y abrimos el proyecto; después practicamos los componentes y trabajamos en nuestra tarea.
+Vamos a construir CowPay a partir de nuestro [diseño en Figma](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1). Esta es nuestra puerta de entrada: primero entendemos qué vamos a hacer, instalamos las herramientas y abrimos el proyecto; después practicamos los componentes y trabajamos en nuestra tarea.
+
+**Cambio de alcance del 27 de noviembre:** vamos a priorizar la landing, los accesos con backend y base de datos, el CRUD de restaurantes y administradores desde superadmin y el CRUD de personal desde admin. El comensal se registra por su cuenta. Conservamos el diseño restante para después. Antes de tomar una tarea leemos el [plan de backend y entrega](docs/plan-backend-y-entrega.md): explica las dependencias, las bases que preparo y cómo podemos avanzar en paralelo.
 
 **Entrega final: 7 de diciembre de 2026.** Periodo reprogramado del sprint: **21 de noviembre al 4 de diciembre de 2026**. La primera jornada de apoyo en el SENA es el lunes 23; el fin de semana no es obligatorio.
 
@@ -18,6 +20,7 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 | Documento                                                       | Para qué lo abrimos                                                                                                      |
 | --------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------ |
 | [Este README](README.md)                                        | Empezar, instalar las herramientas y entender cómo vamos a trabajar                                                      |
+| [Plan de backend y entrega; 27 de noviembre](docs/plan-backend-y-entrega.md) | Consultar el alcance vigente, permisos, responsables, bases compartidas, tareas de Jira y orden de implementación |
 | [Preparar la base](docs/preparar-base.md)                       | Crear manualmente nuestra única aplicación en la carpeta actual; lo hago yo una vez                                      |
 | [Guía teórica y práctica](docs/guia-desde-cero.md)              | Aprender React, Next.js, componentes, CSS y navegación con ejercicios                                                    |
 | [Ejercicios prácticos](docs/ejercicios-practicos.md) | Practicar HTML, CSS, React, children y un PR en carpetas propias antes de desarrollar el módulo |
@@ -26,13 +29,14 @@ Vamos a construir el frontend de CowPay a partir de nuestro [diseño en Figma](h
 | [Auditoría de pantallas y variantes de Figma](docs/auditoria-figma.md) | Comparar los 166 frames inventariados con las 77 rutas y consultar los huecos de alcance |
 | [Inventario de Figma](docs/inventario-figma.json) | Consultar los identificadores de cada frame y los límites de la revisión |
 | [Mapa de rutas](docs/rutas.md)                                  | Ver las pantallas, sus direcciones, prioridades y responsables                                                           |
-| [Datos y conexión futura](docs/contratos-y-reglas.md)           | Separar las pantallas y los datos de ejemplo para conectarlos al backend después                                         |
-| [Plan del equipo](docs/plan-equipo.md)                          | Consultar tareas, subtareas, carpetas, responsables y fechas                                                             |
+| [Datos y conexión](docs/contratos-y-reglas.md)           | Consultar los acuerdos iniciales y su actualización para conectar el backend                                         |
+| [Plan inicial del equipo](docs/plan-equipo.md)                          | Consultar el reparto inicial de pantallas; el plan del 27 actualiza prioridades y responsabilidades                                                             |
 | [Trabajo colaborativo desde cero](docs/trabajo-colaborativo.md) | Entender Git y GitHub y seguir los pasos de nuestra primera entrega, con un recorrido para mí y otro para los compañeros |
 | [Jira y GitHub](docs/jira-y-github.md)                          | Relacionar una tarea con su rama y PR y saber cuándo pasarla a Hecho                                                     |
 | [Seguimiento semanal](docs/seguimiento-semanal.md)              | Revisar avances en el SENA y preparar el informe para la instructora                                                     |
 | [Registro de tareas de Jira](docs/backlog-jira.json)            | Consultar las claves y el registro de planificación; no es un tutorial ni código de la aplicación                        |
-| [Documento original de requisitos](docs/CowPay.pdf)             | Consultar el contexto completo del proyecto; el alcance de esta entrega es el frontend descrito aquí                     |
+| [Replanificación de Jira; 27 de noviembre](docs/replan-jira-2026-11-27.json) | Consultar las nuevas tareas de backend, dependencias y trabajo aplazado |
+| [Documento original de requisitos](docs/CowPay.pdf)             | Consultar el contexto completo; la entrega actual está acotada en el plan del 27 de noviembre                     |
 
 Los documentos de `docs/` complementan este README. No tenemos que leer toda la planificación para poder cambiar nuestro primer título.
 
@@ -40,15 +44,15 @@ Los documentos de `docs/` complementan este README. No tenemos que leer toda la 
 
 El diseño ya está en [Figma](https://www.figma.com/design/Jl44XTkbSj8jzWkU3n4VG1/COMPLETE-COWPAY-DESING?node-id=0-1). Ahora vamos a pasarlo a código.
 
-Primero vamos a construir el frontend: las pantallas que ve y usa cada persona. Deben verse bien en celular y computador, permitir navegar y responder a las acciones del usuario. Para eso usaremos datos inventados y compartidos por todo el equipo.
+Empezamos por el frontend: las pantallas que ve y usa cada persona. Ahora vamos a conectar los accesos y la gestión de cuentas al servidor y a una base de datos. Superadmin crea administradores para restaurantes; cada admin crea mesero, cocina y cajero de su restaurante. El comensal se registra por separado.
 
-Una pantalla no queda lista solamente por verse parecida a Figma. Los enlaces y botones permiten recorrer las pantallas del diseño. Los formularios son visuales: pueden mostrar datos de ejemplo y llevar a la siguiente pantalla. No exigimos validaciones, cálculos, autenticación, envío de pedidos ni pagos reales para esta entrega. Si una función todavía es simulada, debe quedar claro.
+En los accesos y CRUD ya necesitamos comprobar datos, credenciales, sesiones y permisos en servidor. Los datos deben permanecer después de recargar. Los flujos de pedidos, división de cuenta, cobros e inventario que no forman parte de este mínimo siguen aplazados; no exigimos terminarlos para probar los usuarios. Una ruta provisional no equivale a una función terminada.
 
 ## 2. Estado actual de la base (20 de noviembre de 2026)
 
 Ya tenemos una sola aplicación Next.js dentro de `cowpay`, con React, TypeScript y pnpm. Preparamos 77 páginas P0/P1, layouts por área, pantallas provisionales con su responsable, navegación de ejemplo y carpetas de imágenes. La compilación y TypeScript pasaron. La base permite empezar a maquetar las interfaces. La [auditoría de Figma](docs/auditoria-figma.md) detectó variantes y recorridos que todavía no están desglosados; 77 rutas no equivalen a todo el diseño terminado ni planificado.
 
-Esto está preparado en la copia de trabajo. Todavía tengo que guardar, subir y fusionar el PR de estructura; no damos por publicado en main algo que solo está en nuestro computador. Cuando esté integrado, todos actualizamos nuestras copias.
+La base ya se integró mediante los PR #17 y #18. La landing, el login visual del comensal, el acceso de cocina y el inicio de mesero tienen avances integrados posteriores. El [plan actualizado](docs/plan-backend-y-entrega.md) recoge sus evidencias. La revisión del 27 no encontró todavía backend ni persistencia implementados. Los cambios de layouts de la rama `prueba-no-renderizar-navBar` aún requieren PR; no los damos por integrados.
 
 El [estado y recorrido de la base](docs/base-actual.md) explica dónde trabajamos, cómo abrimos las rutas y qué hacen las piezas que añadimos. Las páginas provisionales no equivalen a las interfaces terminadas de Figma.
 
@@ -70,7 +74,7 @@ El [estado y recorrido de la base](docs/base-actual.md) explica dónde trabajamo
 
 **No instalamos por ahora Zustand, TanStack Query, Socket.IO, Docker ni bibliotecas de componentes.** Empezamos con React, CSS y funciones sencillas. Si aparece una necesidad real, se evalúa y se documenta antes de añadir una dependencia.
 
-Para la siguiente etapa de datos elegimos **PostgreSQL + Prisma**: PostgreSQL guarda información relacionada y Prisma ayuda a consultarla y mantener cambios en su estructura. No se instalan para dibujar pantallas. Antes de crear el login real habrá que escoger una solución de autenticación mantenida que cubra sesiones, roles y recuperación; no vamos a inventar seguridad a partir de una maqueta.
+Para la etapa de datos vamos a preparar **PostgreSQL + Prisma**: PostgreSQL guarda información relacionada y Prisma ayuda a consultarla y mantener cambios en su estructura. Fijamos versiones compatibles al preparar la base en KAN-94. En KAN-95 acordamos una biblioteca de autenticación mantenida para sesiones y recuperación. Estas dependencias todavía no están instaladas en la versión revisada; los compañeros no deben instalarlas por separado antes de integrar el PR común.
 
 ## 4. Qué debemos instalar en Windows
 
@@ -370,7 +374,7 @@ Según el correo de la instructora, debemos retomar las actividades existentes d
 
 Cada tarea lleva objetivo, pantalla de Figma, ruta, subtareas, responsable, puntos de esfuerzo y forma de comprobarla. El enlace al PR se pega en la tarea. Para nosotros, “Hecho” significa que revisamos e integramos la pantalla, no solamente que la subimos al fork.
 
-El proyecto de Jira es **CowPay (KAN)** y su [tablero existente](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1). Los cinco ya tenemos acceso y tareas asignadas en el proyecto. Las 24 tareas y 69 subtareas están creadas y asignadas según el reparto. Si después se incorpora alguien más, primero lo invitamos al proyecto; no alcanza con escribir su nombre en la descripción.
+El proyecto de Jira es **CowPay (KAN)** y su [tablero existente](https://rojasricosworkspace-65f8ece0.atlassian.net/jira/software/projects/KAN/boards/1). Los cinco ya tenemos acceso y tareas asignadas en el proyecto. El plan inicial tenía 24 tareas y 69 subtareas. La replanificación incorpora las bases y conexiones descritas en el [plan vigente](docs/plan-backend-y-entrega.md); consultamos allí el reparto corregido. Yo preparo el backend compartido; los compañeros conectan sus interfaces. Si después se incorpora alguien más, primero lo invitamos al proyecto; no alcanza con escribir su nombre en la descripción.
 
 Ya tenemos Backlog, Sprints y estimación por puntos activados. Nuestro sprint **CowPay; Frontend; 21 nov – 4 dic 2026** está activo, con inicio reprogramado el 21 a las 13:00 y cierre el 4 a las 17:45, hora de Colombia. Incluye 23 tareas principales de desarrollo y seguimiento. La entrega final del 7 está aparte en KAN-24. Los puntos están en el campo de estimación de las tareas principales y detallados en sus subtareas; no los sumamos dos veces.
 

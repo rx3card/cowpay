@@ -1,5 +1,8 @@
 # Vamos a construir nuestra primera pantalla de CowPay
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 Esta guía es para quienes ya hemos practicado HTML y CSS y estamos empezando con React y Next.js. Vamos por partes: primero entendemos una idea, después hacemos un cambio pequeño y comprobamos el resultado. No necesitamos memorizar toda la estructura antes de empezar.
 
 [Volver al inicio del proyecto](../README.md). Antes de practicar, seguimos la instalación del README y abrimos la aplicación.

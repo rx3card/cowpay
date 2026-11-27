@@ -1,5 +1,8 @@
 # Cómo vamos a trabajar con Jira y GitHub
 
+> **Actualización del 27 de noviembre:** el alcance vigente incorpora backend, base de datos, accesos y CRUD. Este documento conserva la explicación o planificación inicial de frontend; sus restricciones de «solo frontend» no se aplican al nuevo mínimo. Antes de tomar una tarea consultamos [el plan de backend y entrega](plan-backend-y-entrega.md).
+
+
 [Volver al README](../README.md). Seguimos este recorrido cuando ya tenemos la base instalada y una tarea elegida. Los pasos para instalar están en el README. Si estamos aprendiendo Git, primero seguimos la [guía de trabajo colaborativo](trabajo-colaborativo.md): distingue mi caso del de los compañeros y explica los comandos uno por uno.
 
 ## Para qué usamos cada uno
