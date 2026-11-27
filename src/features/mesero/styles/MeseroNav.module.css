@@ -32,7 +32,9 @@
   display: block;
   width: 100%;
   box-sizing: border-box;
-  padding: 12px;
+  padding: 13px 12px;
+  font-size: 17px;
+  line-height: 1.2;
   border-radius: 10px;
   color: var(--color-blanco);
   text-decoration: none;
@@ -90,9 +92,9 @@
     box-sizing: border-box;
     min-height: 44px;
     padding: 0;
-    border: 1px solid rgba(255, 255, 255, 0.25);
+    border: 1px solid #374151;
     border-radius: 10px;
-    background: #26313f;
+    background: #374151;
     color: var(--color-blanco);
     font: inherit;
     font-weight: 600;
@@ -166,9 +168,9 @@
     width: 44px;
     height: 44px;
     place-items: center;
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    border: 1px solid #26313f;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.08);
+    background: #26313f;
     color: var(--color-blanco);
     font: inherit;
     cursor: pointer;
@@ -182,4 +184,27 @@
     .enlaces { transition-duration: 0.01ms; }
   }
 }
+@media (min-width: 768px) and (max-width: 1100px) {
+  .nav {
+    min-height: 0;
+  }
 
+  .enlaces {
+    gap: 1.5px;
+  }
+
+  .enlaces a {
+    padding: clamp(6px, 1.05vh, 10.5px) 12px;
+    font-size: clamp(19.5px, 1.875vw, 21px);
+    line-height: 1.15;
+  }
+
+  .nombreRestaurante {
+    gap: 6px;
+    padding-top: 10px;
+  }
+
+  .nombreRestaurante h2 {
+    font-size: 17px;
+  }
+}

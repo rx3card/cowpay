@@ -1,4 +1,4 @@
-import { CuentaMesaPage } from "../../../../../features/mesero/pages/CuentaMesaPage";
+import { CuentaMesaPage } from "../../../../../../features/mesero/pages/CuentaMesaPage";
 
 type PageProps = {
   params: Promise<{ id: string }>;

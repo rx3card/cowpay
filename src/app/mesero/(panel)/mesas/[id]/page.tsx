@@ -1,4 +1,4 @@
-import { MesaDetallePage } from "../../../../features/mesero/pages/MesaDetallePage";
+import { MesaDetallePage } from "../../../../../features/mesero/pages/MesaDetallePage";
 
 // Describimos los datos que NextJS entrega a esta página.
 type PageProps = {

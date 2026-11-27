@@ -3,16 +3,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import { usePathname} from "next/navigation"
 import styles from "../styles/MeseroNav.module.css";
 
 export function MeseroNav() {
-  const [seleccionado, setSeleccionado] = useState("");
+  const pathname = usePathname();
   const [menuAbierto, setMenuAbierto] = useState(false);
   const cerrarMenu = () => setMenuAbierto(false);
   const links = [
     ["inicio", "/mesero", "Inicio"],
     ["mesas", "/mesero/mesas", "Mesas"],
-    ["inicioSesion", "/mesero/entrar", "Iniciar sesión"],
     ["detalleMesas", "/mesero/mesas/4", "Detalle de mesa"],
     ["registroPedido", "/mesero/mesas/4/pedido", "Registrar pedido a mesas"],
     ["estadoPedido", "/mesero/pedidos", "Estado de pedidos"],
@@ -56,11 +56,8 @@ export function MeseroNav() {
           <Link
             key={id}
             href={href}
-            onClick={() => {
-              setSeleccionado(id);
-              cerrarMenu();
-            }}
-            className={seleccionado === id ? styles.activo : ""}
+            onClick={cerrarMenu}
+            className={pathname === href ? styles.activo : ""}
           >
             {texto}
           </Link>

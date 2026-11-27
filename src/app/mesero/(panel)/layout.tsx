@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
-import { MeseroHeader } from "../../features/mesero/components/MeseroHeader";
-import styles from "../../features/mesero/styles/MeseroLayout.module.css";
+import { MeseroHeader } from "../../../features/mesero/components/MeseroHeader";
+import styles from "../../../features/mesero/styles/MeseroLayout.module.css";
 
 type MeseroLayoutProps = {
   children: ReactNode;
